@@ -330,6 +330,7 @@ a {
 .possible-actions-section {
   margin-top: 40px;
   display: inline-block;
+  margin-bottom: 20px;
 }
 
 .possible-actions-section a {
