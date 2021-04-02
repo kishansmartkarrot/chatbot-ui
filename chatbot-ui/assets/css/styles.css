@@ -644,4 +644,5 @@ a {
 .float-right a {
   display: inline-block;
   width: 100%;
+  text-align: right;
 }
