@@ -640,3 +640,8 @@ a {
 .float-right {
   float: right;
 }
+
+.float-right a {
+  display: inline-block;
+  width: 100%;
+}
