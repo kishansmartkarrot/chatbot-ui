@@ -41,6 +41,22 @@ a {
 
 .offcanvas-body {
   padding-top: 0px;
+  padding: 1rem 1.5rem;
+}
+
+.offcanvas-header {
+  padding: 1rem 1.5rem;
+
+}
+
+.offcanvas-footer {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.offcanvas-footer .container {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 /* --------- Chatbot Header --------- */
@@ -481,6 +497,7 @@ a {
   height: 25px;
   margin-top: 12px;
   cursor: pointer;
+  margin-left: -15px;
 }
 
 
