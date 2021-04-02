@@ -179,6 +179,7 @@ a {
   text-align: center;
   padding: 20px 10px;
   margin-bottom: 30px;
+  cursor: pointer;
 }
 
 /* avatar row */
@@ -281,7 +282,7 @@ a {
   margin-right: 10px;
   border-radius: 50%;
   position: absolute;
-  left: 20px;
+  left: 17px;
   top: 5px;
 }
 
@@ -638,5 +639,4 @@ a {
 
 .float-right {
   float: right;
-  margin-left: 110px;
 }
