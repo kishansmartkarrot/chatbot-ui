@@ -49,16 +49,15 @@
           </li>
         </ul>
         <hr>
-        <div>
-          <ul class="avatar-row">
-            <li>
-              <img class="avatar" alt="image" src="assets/imgs/robot.png" alt="">
-            </li>
-            <li>
-              <p><i>Here is a quick snapshot of Acme's situation</i></p>
-            </li>
-          </ul>
+        <div class="flex-baseline">
+          <div>
+            <img class="avatar" alt="image" src="assets/imgs/robot.png" alt="">
+          </div>
+          <div>
+            <p class="font-dark-1"><i>Here are the top 3 customer account at risk:</i></p>
+          </div>
         </div>
+
         <!-- Cards -->
         <div class="row">
           <div class="col-md-4">
@@ -70,7 +69,8 @@
                     <p class="values"><span class="dot"></span> 3.2 <span> (-0.4)</span></p>
                   </div>
                   <h2>Risk Summary</h2>
-                  <p>There are too many escalations.</p>
+                  <p title="There are too many escalations, and There has been poor customer service.">There are too
+                    many escalations, and There has been poor customer service.</p>
                 </div>
               </div>
             </a>
@@ -105,43 +105,21 @@
           </div>
         </div>
         <div class="possible-actions-section">
-          <p class="text-primary" id="btn"><span class="special-font">A</span>Possible Actions...</p>
-          <span class="chip">
-            Give me a summary of <b>'Acme'</b>
-          </span>
-          <span class="chip">
-            Show me the next set of accounts at risk
-          </span>
+          <a href="#" class="text-primary" id="btn"><span class="special-font"><img
+                src="assets/imgs/action-icon.png" /></span>Possible Actions...</a>
         </div>
-        <div class="blue block">
-          <div id="myModal" class="modal fade" role="dialog">
-            <div class="modal-dialog">
-              <!-- Modal content-->
-              <div class="modal-content">
-                <div class="modal-header mt-3">
-                  <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
-                    X
-                  </button>
-                  <h2 class="modal-title ms-3 me-3">Possible Actions you could take</h2>
-                </div>
-                <div class="modal-body ">
-                  <div class="ms-3 me-3">
-                    <div class="modal-chip"> > > Get an update from CSM(s)</div>
-                    <div class="modal-chip"> > > Get an update from CSM(s)</div>
-                    <div class="modal-chip"> > > Get an update from CSM(s)</div>
-                  </div>
-                  <div class="text-right">
-                    <a class="text-warning more-actions">More Actions...</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="float-right">
+          <span class="chip">
+            <p>Give me a summary of <b>'Acme'</b></p>
+          </span>
+          <span class="chip">
+            <p>Show me the next set of accounts at risk</p>
+          </span>
         </div>
       </div>
       <div class="offcanvas-footer">
-        <a href="typing.html">
-          <div class="container">
+        <div class="container">
+          <form id="chatbot-form">
             <div class="row align-middle">
               <div class="col-md-10">
                 <input type="text" class="form-control message-textbox" id="exampleFormControlInput1"
@@ -153,10 +131,34 @@
                 </div>
               </div>
             </div>
-            </ul>
+          </form>
+          </ul>
+        </div>
+      </div>
+      <div class="blue block">
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header mt-3">
+                <button type="button" class="modal-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                  X
+                </button>
+                <h2 class="modal-title ms-3 me-3">Possible Actions you could take</h2>
+              </div>
+              <div class="modal-body ">
+                <div class="ms-3 me-3">
+                  <div class="modal-chip"> > > Get an update from CSM(s)</div>
+                  <div class="modal-chip"> > > Set up a meeting with the CSM(s)</div>
+                  <div class="modal-chip"> > > Obtain a Health Summary Report</div>
+                </div>
+                <div class="text-right">
+                  <a class="text-warning more-actions">More Actions...</a>
+                </div>
+              </div>
+            </div>
           </div>
-        </a>
-        <!-- Modal -->
+        </div>
       </div>
     </div>
   </div>

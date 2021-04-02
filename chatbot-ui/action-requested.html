@@ -49,15 +49,13 @@
           </li>
         </ul>
         <hr>
-        <div>
-          <ul class="avatar-row">
-            <li>
-              <img class="avatar" alt="image" src="assets/imgs/robot.png" alt="">
-            </li>
-            <li>
-              <p><i>Here are the top 3 customer accounts at risk:</i></p>
-            </li>
-          </ul>
+        <div class="flex-baseline">
+          <div>
+            <img class="avatar" alt="image" src="assets/imgs/robot.png" alt="">
+          </div>
+          <div>
+            <p><i>Here are the top 3 cutomer account at risk:</i></p>
+          </div>
         </div>
         <!-- Card -->
         <div class="row">
@@ -106,9 +104,10 @@
         </div>
         <!-- Possible actions -->
         <div class="possible-actions-section">
-          <p class="text-primary action" id="btn"><span class="special-font">A</span>Possible Actions...</p>
+          <a href="#" class="text-primary" id="btn"><span class="special-font"><img
+                src="assets/imgs/action-icon.png" /></span>Possible Actions...</a>
           <div class="float-right">
-            <div class="action-requested">
+            <div class="action-requested mt-4">
               <div class="desc">
                 <p class="mb-0"><span>Action requested: </span>Get an update from the CSM(s)</p>
               </div>
@@ -119,15 +118,13 @@
           </div>
           <div></div>
         </div>
-
-
         <div class="action-requested-card shadow">
           <div class="flex">
             <div>
               <img src="assets/imgs/check.png" alt="">
             </div>
             <div>
-              <h2 class="mb-0"></h2>Email sent to CSM(s)</h2>
+              <h2 class="mb-0  font-light"> Email sent to CSM(s)</h2>
             </div>
           </div>
           <div class="inner-content">
@@ -135,26 +132,25 @@
             <p class="mb-1"><b>- Jessica Baker</b> (Acme; Bourbon)</p>
             <p class="mb-1"><b>- Tim Browne</b> (Knob Creek)</p>
           </div>
-
         </div>
-
       </div>
       <div class="offcanvas-footer">
         <div class="container">
-          <div class="row align-middle">
-            <div class="col-md-10">
-              <input type="text" class="form-control message-textbox" id="exampleFormControlInput1"
-                placeholder="Need something... type here or ask me!">
-            </div>
-            <div class="col-md-2 ">
-              <div class="align-middle">
-                <img class="microphone" alt="close" src="assets/imgs/microphone-alt-solid.svg" />
+          <form id="chatbot-form">
+            <div class="row align-middle">
+              <div class="col-md-10">
+                <input type="text" class="form-control message-textbox" id="exampleFormControlInput1"
+                  placeholder="Need something... type here or ask me!">
+              </div>
+              <div class="col-md-2 ">
+                <div class="align-middle">
+                  <img class="microphone" alt="close" src="assets/imgs/microphone-alt-solid.svg" />
+                </div>
               </div>
             </div>
-          </div>
+          </form>
           </ul>
         </div>
-        <!-- Modal -->
       </div>
     </div>
   </div>

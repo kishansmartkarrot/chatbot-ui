@@ -12,4 +12,16 @@ $(document).ready(function () {
 		$("body").removeClass("modal-open");
 		$("body").css("padding-right", "");
 	});
+
+	$("#chatbot-form").on("submit", function (event) {
+		event.preventDefault();
+		window.location.replace("take-a-look.html");
+	});
+
+	$("#btn").on("click", function () {
+		$(".block").addClass("z-index-1");
+	});
+	$(".modal-close-btn").on("click", function () {
+		$(".block").removeClass("z-index-1").addClass("z-index-0");
+	});
 });
