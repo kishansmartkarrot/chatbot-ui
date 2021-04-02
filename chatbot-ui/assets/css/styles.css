@@ -577,7 +577,7 @@ a {
 
 .modal {
   overflow: inherit;
-  left: -17px;
+  /* left: -17px; */
 }
 
 .modal-content {
