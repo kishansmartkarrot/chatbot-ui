@@ -1,3 +1,7 @@
+/* Smartkarrot Chatbot UI */
+
+
+/* default styles */
 p {
   font-size: 0.9rem;
   color: #a9a9a9;
@@ -498,4 +502,9 @@ a {
     margin: 1.75rem auto;
     margin-bottom: -25px;
   }
+}
+
+.float-right {
+  float: right;
+  margin-left: 110px;
 }
