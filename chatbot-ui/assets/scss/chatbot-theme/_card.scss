@@ -19,7 +19,7 @@
     border-radius: 6px;
     height: 40px;
     text-align: center;
-    line-height: 2;
+    line-height: 1.5;
     position: relative;
     margin-right: 16px;
 
@@ -29,13 +29,13 @@
       height: 2px;
       background-color: #fff;
       position: absolute;
-      top: 28px;
+      top: 25px;
     }
 
     .line-2 {
       @extend .line-1;
       width: 3px;
-      top: 32px;
+      top: 29px;
       left: 17.5px;
     }
   }

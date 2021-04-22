@@ -104,7 +104,7 @@
     border-radius: 6px;
     height: 40px;
     text-align: center;
-    line-height: 2;
+    line-height: 1.5;
     position: relative;
     margin-right: 16px; }
     .info-card .icon .line-1, .info-card .icon .line-2 {
@@ -113,10 +113,10 @@
       height: 2px;
       background-color: #fff;
       position: absolute;
-      top: 28px; }
+      top: 25px; }
     .info-card .icon .line-2 {
       width: 3px;
-      top: 32px;
+      top: 29px;
       left: 17.5px; }
 
 .material-icons {
