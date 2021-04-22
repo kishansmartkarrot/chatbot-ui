@@ -1,0 +1,44 @@
+@import "../chatbot-theme/variables";
+
+// welcome screen info card
+.info-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: $gray;
+  height: 72px;
+  border-radius: 10px;
+  padding: 16px;
+  cursor: pointer;
+
+  .icon {
+    background-color: $primary;
+    width: 40px;
+    border-radius: 6px;
+    height: 40px;
+    text-align: center;
+    line-height: 2;
+    position: relative;
+    margin-right: 16px;
+
+    .line-1 {
+      left: 16px;
+      width: 6px;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      top: 28px;
+    }
+
+    .line-2 {
+      @extend .line-1;
+      width: 3px;
+      top: 32px;
+      left: 17.5px;
+    }
+  }
+}
+
+// chatbot-icon-card

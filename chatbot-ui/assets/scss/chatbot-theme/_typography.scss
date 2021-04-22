@@ -1,0 +1,50 @@
+@import "../chatbot-theme/variables";
+
+
+
+.heading-light {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 23px;
+  color: #2D2E31;
+}
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  color: #2D2E31;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.text-small-regular-font {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #2D2E31;
+  font-size: 14px;
+}
+
+
+.text-small-semibold-font {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #2D2E31;
+  font-size: 14px;
+}
+
+.text-regular {
+  color: #2D2E31;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+
+  b {
+    font-weight: 600;
+    color: $black;
+  }
+}
+
+
+// text colors
+.text-primary {
+  color: $primary;
+}
