@@ -1,0 +1,15 @@
+{
+  "name": "chatbot-ui",
+  "version": "1.0.0",
+  "description": "Chatbot UI Theme",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch assets/scss -o assets/css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
