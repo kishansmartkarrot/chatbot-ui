@@ -2,6 +2,7 @@
 
 // welcome screen info card
 .info-card {
+  cursor: pointer;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -43,6 +44,7 @@
 
 // regular-card
 .regular-card {
+  cursor: pointer;
   background-color: $gray;
   padding: 15px;
   border-radius: 8px;
@@ -63,10 +65,18 @@
     justify-content: flex-start;
     align-items: center;
   }
+
+  p {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
 }
 
 // chatbot-icon-card
 .chatbot-icon-card {
+  cursor: pointer;
   background-color: $primary;
   width: 56px;
   height: 56px;
@@ -75,6 +85,7 @@
 
 // details card
 .details-card {
+  cursor: pointer;
   border-radius: 8px;
   background-color: $gray;
   padding: 15px;
@@ -95,9 +106,10 @@
     max-width: 100px;
 
     p {
-      white-space: nowrap;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
       overflow: hidden;
-      text-overflow: ellipsis;
     }
 
     img {
@@ -113,6 +125,11 @@
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   padding: 16px;
+
+  position: absolute;
+  width: calc(100% - 60px);
+  bottom: 0;
+  z-index: 111;
 
   .text-primary {
     color: $primary !important;

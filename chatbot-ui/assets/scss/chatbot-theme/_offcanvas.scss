@@ -1,0 +1,80 @@
+@import "../chatbot-theme/variables";
+
+.chatbot-main-head {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 111;
+
+  .chatbot-main {
+    width: 56px;
+    height: 56px;
+    background-color: $primary;
+    border-radius: 8px;
+    text-align: center;
+
+
+    img {
+      height: 56px;
+    }
+  }
+}
+
+.offcanvas-end {
+  width: 537px;
+
+  .line {
+    top: 57px;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.offcanvas-header {
+  padding: 32px 32px 10px 32px;
+}
+
+.offcanvas-body {
+  padding: 10px 32px 10px 32px;
+}
+
+.input-box {
+  position: absolute;
+  bottom: 30px;
+  width: calc(100% - 60px);
+}
+
+// padding & margins
+.mt-12 {
+  margin-top: 12px;
+}
+
+.ml-15 {
+  margin-left: 15px;
+}
+
+.mt-625 {
+  margin-top: 0.625rem;
+}
+
+.mt-big {
+  margin-top: 150px;
+}
+
+.mtb-60 {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.ptb-16 {
+  padding: 16px 0;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}

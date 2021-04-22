@@ -40,6 +40,10 @@
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   background-color: transparent;
+
+  &:hover {
+    background-color: $primary;
+  }
 }
 
 .possible-actions-btn {
@@ -53,6 +57,8 @@
   background-color: $gray;
   border-radius: 0px 10px 10px 10px;
   padding: 11px 16px;
+  margin: 16px 0;
+  cursor: pointer;
 
   img {
     &:first-child {

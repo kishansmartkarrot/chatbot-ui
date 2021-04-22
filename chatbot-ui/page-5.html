@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!-- Goofle FOnts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <!-- Chatbot Theme -->
+  <link rel="stylesheet" href="assets/css/chatbot-theme.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Chatbot-6</title>
+</head>
+
+<body>
+  <div class="container">
+    <button class="btn btn-primary mt-5 btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+      Start
+    </button>
+  </div>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-bs-keyboard="false">
+    <!-- start header -->
+    <div class="offcanvas-header">
+      <div class="chatbot-main-head">
+        <div>
+          <h1 class="heading-light mt-12">Converse…</h1>
+        </div>
+      </div>
+      <ul class="avatar-list">
+
+        <li>
+          <div class="chatbot-avatar-bg">
+            <img src="assets/img/chatbot-avatar.png" alt="">
+          </div>
+        </li>
+        <li>
+          <img class="profile" src="assets/img/profile@2x.png" alt="smartkarrot">
+        </li>
+        <li>
+          <span>
+            <img src="assets/img/user-plus.svg" alt="smartkarrot">
+            <img src="assets/img/add-avatar-circle.svg" alt="smartkarrot">
+          </span>
+        </li>
+      </ul>
+      <a data-bs-dismiss="offcanvas">
+        <div class="close-icon">
+          <img src="assets/img/ionic-ios-close.svg" alt="smartkarrot">
+          <img src="assets/img/circle.svg" alt="smartkarrot">
+        </div>
+      </a>
+    </div>
+    <hr class="line mt-1 mb-1">
+    <!-- end header -->
+
+    <!-- start body -->
+    <div class="offcanvas-body">
+
+      <div class="text-left">
+        <div class="chatbot-profile-icon left-align">
+          <div class="chatbot-avatar-bg">
+            <img src="assets/img/chatbot-avatar.png" alt="">
+          </div>
+          <div>
+            <p class="text-small-bold-font">Glia</p>
+          </div>
+        </div>
+        <div class="chat-petal-left me-auto">
+          <p class="text-small-italic">Here are the top 3 customer accounts at risk:</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-4">
+          <div class="regular-card">
+            <div class="comapany-logo-name">
+              <div>
+                <img src="assets/img/company-1.png" alt="">
+              </div>
+              <div>
+                <p class="text-tiny-bold-font mb-0">Acme Inc.</p>
+              </div>
+            </div>
+            <p class="text-tiny-regular position-relative mb-0"><span class="dot"></span><span class="points">&nbsp;3.2 &nbsp;&nbsp;&nbsp;<span class="text-danger">(-0.4)</span></span> </p>
+            <hr>
+            <p class="text-tiny-bold-font mb-0">Risk Summary</p>
+            <p class="text-tiny-regular mb-0">There are too many escalations!</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="regular-card">
+            <div class="comapany-logo-name">
+              <div>
+                <img src="assets/img/company-2.png" alt="">
+              </div>
+              <div>
+                <p class="text-tiny-bold-font mb-0">Acme Inc.</p>
+              </div>
+            </div>
+            <p class="text-tiny-regular position-relative mb-0"><span class="dot"></span><span class="points">&nbsp;3.9 &nbsp;&nbsp;&nbsp;<span class="text-danger">(-0.4)</span></span> </p>
+            <hr>
+            <p class="text-tiny-bold-font mb-0">Risk Summary</p>
+            <p class="text-tiny-regular mb-0">There is poor customer service!</p>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="regular-card">
+            <div class="comapany-logo-name">
+              <div>
+                <img src="assets/img/company-3.png" alt="">
+              </div>
+              <div>
+                <p class="text-tiny-bold-font mb-0">Acme Inc.</p>
+              </div>
+            </div>
+            <p class="text-tiny-regular position-relative mb-0"><span class="dot"></span><span class="points">&nbsp;3.6 &nbsp;&nbsp;&nbsp;<span class="text-danger">(-0.4)</span></span> </p>
+            <hr>
+            <p class="text-tiny-bold-font mb-0">Risk Summary</p>
+            <p class="text-tiny-regular mb-0">Stakeholder relationship is weak!</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="possible-actions-btn">
+        <div>
+          <img src="assets/img/a-icon.svg" alt="">
+          <span>
+            <img src="assets/img/a-icon-1.svg" alt="">
+          </span>
+        </div>
+        <div>
+          <p class="mb-0 text-tiny-regular">Possible actions…</p>
+        </div>
+      </div>
+
+      <div class="conversation">
+        <div class="text-right">
+          <p class="conversation-text">
+            Give me a summary of <b>‘Acme’</b>
+          </p>
+
+        </div>
+        <div class="text-right">
+          <p class="conversation-text">
+            Show me next set of account at risk
+          </p>
+        </div>
+      </div>
+      <div class="text-right">
+        <div class="chatbot-profile-icon right-align">
+          <div>
+            <p class="text-small-bold-font">Karl</p>
+          </div>
+          <div class="chatbot-avatar-bg-transparent">
+            <img src="assets/img/profile.png" alt="">
+          </div>
+        </div>
+        <div class="chat-petal-right ms-auto">
+          <span>
+            <img src="assets/img/dot-1.svg" alt="">
+          </span><span>
+            <img src="assets/img/dot-1.svg" alt="">
+          </span><span>
+            <img src="assets/img/dot-1.svg" alt="">
+          </span>
+        </div>
+      </div>
+
+      <div class="input-box">
+        <div class="position-relative">
+          <div class="mic-icon">
+            <img src="assets/img/microphone-alt-solid.svg" alt="smartkarrot">
+          </div>
+          <div class="input-group">
+            <input id="input-box" type="text" class="form-control" placeholder="Need something… Type here or ask me!" aria-label="Username" aria-describedby="basic-addon1">
+            <span class="input-group-text" id="basic-addon1">
+              <img src="assets/img/ionic-ios-send.svg" alt="smartkarrot">
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end body -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

@@ -26,6 +26,16 @@
   font-feature-settings: 'liga';
 }
 
+.star-text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  p {
+    margin-left: 10px;
+  }
+}
+
 .star {
   background-color: $primary;
   width: 20px;
@@ -37,5 +47,6 @@
   span {
     font-size: 18px;
     color: $white;
+    text-align: center;
   }
 }

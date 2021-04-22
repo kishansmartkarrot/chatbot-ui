@@ -4,6 +4,7 @@
 // regular list
 .regular-list {
   list-style: none;
+  margin-bottom: 24px;
 
   li {
     font-family: 'Open Sans', sans-serif;
@@ -33,9 +34,14 @@
   padding: 0;
   list-style: none;
   display: flex;
+  top: 42px;
+  left: 190px;
+  position: absolute;
+  z-index: 111;
 
   li {
     padding-right: 9px;
+    cursor: pointer;
 
     .profile {
       @extend .avatar;
@@ -44,6 +50,7 @@
     span {
       position: relative;
       opacity: 0.7;
+      background-color: #fff;
 
       img {
         &:first-child {
