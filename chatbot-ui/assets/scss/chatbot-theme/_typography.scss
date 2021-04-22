@@ -7,6 +7,10 @@
   font-weight: 200;
   font-size: 23px;
   color: $dark;
+  margin-bottom: 0;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: $white;
 }
 
 .title {
@@ -84,4 +88,8 @@
 // text colors
 .text-primary {
   color: $primary !important;
+}
+
+.text-special {
+  padding: 16px 0 32px 0;
 }

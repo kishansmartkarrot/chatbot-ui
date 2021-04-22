@@ -1,5 +1,13 @@
 @import "../chatbot-theme/variables";
 
+// cahtbot avatar
+.chatbot-avatar-bg {
+  background-color: $primary;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+}
+
 // chat profile icon
 .left-align {
   justify-content: flex-start;
@@ -31,6 +39,23 @@
     width: 34px;
     height: 34px;
     border-radius: 50%;
+  }
+}
+
+.conversation-text {
+  font-style: italic;
+  font-style: 14px;
+  color: $dark;
+  opacity: 0.4;
+  margin-bottom: 0;
+  background-color: $chatInputChip;
+  padding: 15px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-bottom: 16px;
+
+  b {
+    font-weight: 500;
   }
 }
 
