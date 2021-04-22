@@ -1,0 +1,87 @@
+@import "../chatbot-theme/variables";
+
+
+// heading & titles
+.heading-light {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+  font-size: 23px;
+  color: $dark;
+}
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  color: $dark;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+// small font
+.text-small-regular-font {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: $dark;
+  font-size: 14px;
+}
+
+.text-small-semibold-font {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: $dark;
+  font-size: 14px;
+}
+
+.text-small-bold-font {
+  font-weight: bold;
+  @extend .text-small-semibold-font;
+}
+
+// very small font
+.text-tiny-bold-font {
+  font-weight: bold;
+  font-size: 12px;
+  color: $dark;
+}
+
+// regular font
+.text-regular {
+  color: $dark;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+
+  b {
+    font-weight: 600;
+    color: $black;
+  }
+}
+
+.text-small-regular {
+  color: $dark;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.text-tiny-regular {
+  color: $dark;
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  opacity: 0.8;
+  color: $black;
+}
+
+
+// italic font
+.text-small-italic {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+}
+
+// text colors
+.text-primary {
+  color: $primary !important;
+}

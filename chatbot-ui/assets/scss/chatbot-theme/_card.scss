@@ -1,0 +1,189 @@
+@import "../chatbot-theme/variables";
+
+// welcome screen info card
+.info-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  background-color: $gray;
+  height: 72px;
+  border-radius: 10px;
+  padding: 16px;
+  cursor: pointer;
+
+  .icon {
+    background-color: $primary;
+    width: 40px;
+    border-radius: 6px;
+    height: 40px;
+    text-align: center;
+    line-height: 1.5;
+    position: relative;
+    margin-right: 16px;
+
+    .line-1 {
+      left: 16px;
+      width: 6px;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      top: 25px;
+    }
+
+    .line-2 {
+      @extend .line-1;
+      width: 3px;
+      top: 29px;
+      left: 17px;
+    }
+  }
+}
+
+// regular-card
+.regular-card {
+  background-color: $gray;
+  padding: 15px;
+  border-radius: 8px;
+
+  .points {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 12px;
+  }
+
+  .comapany-logo-name {
+    img {
+      margin-right: 12px;
+    }
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+// chatbot-icon-card
+.chatbot-icon-card {
+  background-color: $primary;
+  width: 56px;
+  height: 56px;
+  border-radius: 6px;
+}
+
+// details card
+.details-card {
+  border-radius: 8px;
+  background-color: $gray;
+  padding: 15px;
+
+  .points {
+    display: inline-block;
+    margin-left: 15px;
+    margin-top: 12px;
+  }
+
+  .text-danger {
+    color: $danger;
+  }
+
+  .company-logo-div {
+    display: flex;
+    flex-direction: row;
+    max-width: 100px;
+
+    p {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    img {
+      border-radius: 3px;
+      margin-right: 12px;
+    }
+  }
+}
+
+// possible action card
+.possible-action-card {
+  background-color: $gray;
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  padding: 16px;
+
+  .text-primary {
+    color: $primary !important;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .close {
+    position: absolute;
+    right: 5px;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .list-item {
+    border: 1px solid $info;
+    border-radius: 8px;
+    height: 32px;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
+    margin-bottom: 8px;
+
+    span {
+      img {
+        margin-top: -4px;
+
+        &:nth-child(2) {
+          margin-right: 6px;
+        }
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      margin-left: 13px;
+    }
+  }
+
+  .header {
+    position: relative;
+    margin-bottom: 15px;
+
+    .a-icon {
+      position: absolute;
+      left: 0;
+      top: -5px;
+
+    }
+  }
+
+  .heading-text {
+    display: inline-block;
+    margin-left: 35px;
+  }
+
+  .title {
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+
+
+    img {
+      &:nth-child(2) {
+        position: absolute;
+        left: 15px;
+        top: 27px;
+      }
+    }
+  }
+}

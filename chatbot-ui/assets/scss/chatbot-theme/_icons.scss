@@ -1,0 +1,35 @@
+@import "../chatbot-theme/variables";
+
+// close icons
+.close-icon {
+  img {
+    &:first-child {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  position: relative;
+  width: 36px;
+  height: 36px;
+}
+
+// line
+.line {
+  border: 1px solid $border;
+  border-top: 0;
+  box-shadow: -10px 13px 16px #00000029;
+}
+
+// dot
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: $danger;
+  border-radius: 50%;
+  position: absolute;
+  top: 16px;
+  left: 0;
+}

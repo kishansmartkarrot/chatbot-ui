@@ -1,0 +1,71 @@
+@import "../chatbot-theme/variables";
+
+.btn-lg {
+  height: 56px;
+}
+
+.btn {
+  &:active {
+    box-shadow: none;
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+}
+
+.btn-primary {
+  border: 0;
+  box-shadow: 5px 10px 16px #4520AA34;
+  border-radius: 10px;
+  background-color: $primary;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $primary;
+  }
+}
+
+.btn-outline-primary {
+  border-color: $primary;
+  color: $primary;
+  border-radius: 10px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  background-color: transparent;
+}
+
+.possible-actions-btn {
+  position: relative;
+  width: 162px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: $gray;
+  border-radius: 0px 10px 10px 10px;
+  padding: 11px 16px;
+
+  img {
+    &:first-child {
+      margin-right: 14px;
+    }
+  }
+
+  span {
+    img {
+      position: absolute;
+      left: 30px;
+      top: 28px;
+      object-fit: contain;
+    }
+  }
+}

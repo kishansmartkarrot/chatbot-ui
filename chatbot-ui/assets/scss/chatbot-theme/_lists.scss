@@ -1,0 +1,62 @@
+@import "../chatbot-theme/variables";
+
+
+// regular list
+.regular-list {
+  list-style: none;
+
+  li {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: $dark;
+    font-size: 13px;
+    background: url('/assets/img/dot.svg') no-repeat 0 5px;
+    height: 25px;
+    padding-top: 0;
+    padding-left: 25px;
+
+    span {
+      opacity: 0.6;
+    }
+  }
+}
+
+// avatar list
+.avatar {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}
+
+.avatar-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+
+  li {
+    padding-right: 9px;
+
+    .profile {
+      @extend .avatar;
+    }
+
+    span {
+      position: relative;
+      opacity: 0.7;
+
+      img {
+        &:first-child {
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          left: 56%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+
+      }
+    }
+  }
+
+}
