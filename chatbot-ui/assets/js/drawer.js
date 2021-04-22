@@ -5,6 +5,10 @@ $('.js-close-button').on('click', function () {
     $('.input-group-text').css('box-shadow', '5px 10px 16px #4520aa5c')
 })
 
+$('.input-group-text').on('click', function () {
+    window.location.replace('../../page-5.html')
+})
+
 const drawerTransitioner = transitionHiddenElement({
     element: document.querySelector('.js-drawer'),
     visibleClass: 'is-open'
