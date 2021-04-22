@@ -475,6 +475,11 @@
 .cursor-pointer {
   cursor: pointer; }
 
+.link {
+  width: 100%;
+  display: inherit;
+  text-decoration: none !important; }
+
 .Drawer {
   width: calc(100% - 60px);
   position: absolute;
