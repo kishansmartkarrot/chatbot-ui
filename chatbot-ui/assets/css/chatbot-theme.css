@@ -417,6 +417,9 @@
 .chats-inputs {
   width: fit-content; }
 
+.hide {
+  display: none; }
+
 .chatbot-main-head {
   display: flex;
   justify-content: flex-start;
