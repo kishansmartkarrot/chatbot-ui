@@ -1,3 +1,4 @@
+// on open posible action modal hide & show box shadow of input
 $('.js-open-button').on('click', function () {
     $('.input-group-text').css('box-shadow', 'none')
 })
@@ -5,10 +6,22 @@ $('.js-close-button').on('click', function () {
     $('.input-group-text').css('box-shadow', '5px 10px 16px #4520aa5c')
 })
 
+// apply typing animation
+$('#input-box').keydown(function () {
+    $('.typing')
+        .removeClass('hide')
+        .addClass('animate__fadeIn animate__animated')
+})
+$('#input-box').keyup(function () {
+    setTimeout(function () {
+        $('.typing').addClass('hide')
+    }, 100)
+})
 $('.input-group-text').on('click', function () {
     window.location.replace('../../page-5.html')
 })
 
+// drawer
 const drawerTransitioner = transitionHiddenElement({
     element: document.querySelector('.js-drawer'),
     visibleClass: 'is-open'

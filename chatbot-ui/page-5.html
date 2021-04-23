@@ -16,6 +16,8 @@
   <!-- Chatbot Theme -->
   <link rel="stylesheet" href="assets/css/chatbot-theme.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>Chatbot-5</title>
 </head>
 
@@ -64,6 +66,7 @@
     <!-- start body -->
     <div class="offcanvas-body">
 
+      <!-- start chat left -->
       <div class="text-left">
         <div class="chatbot-profile-icon left-align">
           <div class="chatbot-avatar-bg">
@@ -77,6 +80,9 @@
           <p class="text-small-italic">Here are the top 3 customer accounts at risk:</p>
         </div>
       </div>
+      <!-- end chat left -->
+
+      <!-- start risk summary card section -->
       <div class="row">
         <div class="col-4">
           <div class="regular-card">
@@ -127,8 +133,9 @@
           </div>
         </div>
       </div>
+      <!-- end risk summary card section -->
 
-
+      <!-- start possible action btn -->
       <div class="possible-actions-btn">
         <div>
           <img src="assets/img/a-icon.svg" alt="">
@@ -140,7 +147,10 @@
           <p class="mb-0 text-tiny-regular">Possible actions…</p>
         </div>
       </div>
+      <!-- end  possible action btn -->
 
+      <!-- start possible action inputs -->
+      <!-- Note: This a tag is added for demo purpose only. Remove a tag for dynamic link  -->
       <a class="link" href="page-6.html">
         <div class="conversation">
           <div class="text-right">
@@ -155,7 +165,10 @@
           </div>
         </div>
       </a>
-      <div class="text-right">
+      <!-- end possible action inputs -->
+
+      <!-- start conversation right (typing) -->
+      <div class="text-right typing hide">
         <div class="chatbot-profile-icon right-align">
           <div>
             <p class="text-small-bold-font">Karl</p>
@@ -166,15 +179,17 @@
         </div>
         <div class="chat-petal-right ms-auto">
           <span>
-            <img src="assets/img/dot-1.svg" alt="">
+            <img class="animate__animated animate__heartBeat   animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
           </span><span>
-            <img src="assets/img/dot-1.svg" alt="">
+            <img class="animate__animated animate__heartBeat    animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
           </span><span>
-            <img src="assets/img/dot-1.svg" alt="">
+            <img class="animate__animated animate__heartBeat   animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
           </span>
         </div>
       </div>
+      <!-- end conversation right (typing) -->
 
+      <!-- start input -->
       <div class="input-box">
         <div class="position-relative">
           <div class="mic-icon">
@@ -188,6 +203,8 @@
           </div>
         </div>
       </div>
+      <!-- end input -->
+
     </div>
     <!-- end body -->
   </div>

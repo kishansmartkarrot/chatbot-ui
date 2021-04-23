@@ -16,6 +16,8 @@
   <!-- Chatbot Theme -->
   <link rel="stylesheet" href="assets/css/chatbot-theme.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <title>Chatbot-4</title>
 </head>
 
@@ -27,6 +29,7 @@
   </div>
 
   <div class="offcanvas offcanvas-end show" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-bs-keyboard="false">
+
     <!-- start header -->
     <div class="offcanvas-header">
       <div class="chatbot-main-head">
@@ -63,6 +66,8 @@
 
     <!-- start body -->
     <div class="offcanvas-body">
+
+      <!-- start chat right section -->
       <div class="text-right">
         <div class="chatbot-profile-icon right-align">
           <div>
@@ -76,6 +81,9 @@
           <p class="text-small-italic">Provide a summary of Acme’s situation</p>
         </div>
       </div>
+      <!-- end chat right section -->
+
+      <!-- start chat left section -->
       <div class="text-left">
         <div class="chatbot-profile-icon left-align">
           <div class="chatbot-avatar-bg">
@@ -89,6 +97,9 @@
           <p class="text-small-italic">Here is a quick snapshot of Acme’s situation</p>
         </div>
       </div>
+      <!-- end chat left section -->
+
+      <!-- start risk summary details card  -->
       <div class="details-card">
         <div class="row">
           <div class="col-3">
@@ -113,7 +124,9 @@
         <p class="text-tiny-bold-font mb-1">Risk Summary</p>
         <p class="text-tiny-regular mb-0">- There are 3 open escalations, 1 escalation is 2 weeks past its SLA.</p>
       </div>
+      <!-- end risk summary details card  -->
 
+      <!-- start possible action btn -->
       <div class="possible-actions-btn">
         <div>
           <img src="assets/img/a-icon.svg" alt="">
@@ -125,13 +138,14 @@
           <p class="mb-0 text-tiny-regular">Possible actions…</p>
         </div>
       </div>
+      <!-- end possible action btn -->
 
+      <!-- start conversation section -->
       <div class="conversation">
         <div class="text-right">
           <p class="conversation-text">
             Review open escalations
           </p>
-
         </div>
         <div class="text-right">
           <p class="conversation-text">
@@ -139,7 +153,9 @@
           </p>
         </div>
       </div>
+      <!-- end conversation section -->
 
+      <!-- start possible action popup modal -->
       <div class="possible-action-card Drawer js-drawer" hidden>
         <div class="header">
           <p class="ml-15 mb-0 text-tiny-regular heading-text">Possible actions you could take</p>
@@ -167,7 +183,31 @@
           <a href="#" class="btn btn-link text-tiny-regular text-primary">More actions…</a>
         </div>
       </div>
+      <!-- end possible action popup modal -->
 
+      <!-- start conversation right (typing) -->
+      <div class="text-right typing hide">
+        <div class="chatbot-profile-icon right-align">
+          <div>
+            <p class="text-small-bold-font">Karl</p>
+          </div>
+          <div class="chatbot-avatar-bg-transparent">
+            <img src="assets/img/profile.png" alt="">
+          </div>
+        </div>
+        <div class="chat-petal-right ms-auto">
+          <span>
+            <img class="animate__animated animate__heartBeat   animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
+          </span><span>
+            <img class="animate__animated animate__heartBeat    animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
+          </span><span>
+            <img class="animate__animated animate__heartBeat   animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
+          </span>
+        </div>
+      </div>
+      <!-- end conversation right (typing) -->
+
+      <!-- start input -->
       <div class="input-box">
         <div class="position-relative">
           <div class="mic-icon">
@@ -181,6 +221,8 @@
           </div>
         </div>
       </div>
+      <!-- end input -->
+
     </div>
     <!-- end body -->
   </div>
