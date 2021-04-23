@@ -15,10 +15,10 @@ $('#input-box').keydown(function () {
 $('#input-box').keyup(function () {
     setTimeout(function () {
         $('.typing').addClass('hide')
-    }, 100)
+    }, 3000)
 })
 $('.input-group-text').on('click', function () {
-    window.location.replace('../../page-5.html')
+    window.location.replace('page-5.html')
 })
 
 // drawer
