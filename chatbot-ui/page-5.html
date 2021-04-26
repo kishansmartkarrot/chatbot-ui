@@ -23,12 +23,16 @@
 
 <body>
   <div class="container">
-    <button class="btn btn-primary mt-5 btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
-      Start
-    </button>
+    <img class="chat-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" src="assets/img/chat-icon.png" alt="">
   </div>
 
   <div class="offcanvas offcanvas-end show" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-bs-keyboard="false">
+    <!-- start background  -->
+    <img class="clouds-img-1" src="assets/img/img-1.svg" alt="">
+    <img class="clouds-img-2" src="assets/img/img-2.svg" alt="">
+    <img class="clouds-img-3" src="assets/img/img-3.svg" alt="">
+    <!-- end background  -->
+
     <!-- start header -->
     <div class="offcanvas-header">
       <div class="chatbot-main-head">
@@ -48,7 +52,7 @@
         </li>
         <li>
           <span>
-           <img src="assets/img/Icon feather-user-plus-new.svg" alt="smartkarrot">
+            <img src="assets/img/Icon feather-user-plus-new.svg" alt="smartkarrot">
             <img src="assets/img/add-avatar-circle.svg" alt="smartkarrot">
           </span>
         </li>
@@ -154,17 +158,47 @@
         <div class="conversation">
           <div class="text-right">
             <p class="conversation-text">
-              Give me a summary of <b>‘Acme’</b>
-            </p>
-          </div>
-          <div class="text-right">
-            <p class="conversation-text">
               Show me next set of account at risk
+            </p>
+
+            <p class="conversation-text">
+              Give me a summary of <b>‘Acme’</b>
             </p>
           </div>
         </div>
       </a>
       <!-- end possible action inputs -->
+
+      <!-- start possible actions poup -->
+      <div class="possible-action-card Drawer js-drawer" hidden>
+        <div class="header">
+          <p class="ml-15 mb-0 text-tiny-regular heading-text">Possible actions you could take</p>
+          <span class="a-icon">
+            <span class="title">
+              <img src="assets/img/a-icon.svg" alt="">
+              <img src="assets/img/a-icon-1.svg" alt=""></span>
+          </span>
+          <span class="close   js-close-button">
+            <img src="assets/img/ionic-ios-close.svg" alt="">
+          </span>
+        </div>
+        <div class="body">
+          <div class="list-item">
+            <a href="page-8.html" class="text-tiny-regular"><span><img src="assets/img/angle-right.svg" alt=""><img src="assets/img/angle-right.svg" alt=""></span>Get an update from the CSM(s)</a>
+          </div>
+          <div class="list-item">
+            <a href="page-8.html" class="text-tiny-regular"><span><img src="assets/img/angle-right.svg" alt=""><img src="assets/img/angle-right.svg" alt=""></span>Set up a meeting with the CSM(s)</a>
+          </div>
+          <div class="list-item">
+            <a href="page-8.html" class="text-tiny-regular"><span><img src="assets/img/angle-right.svg" alt=""><img src="assets/img/angle-right.svg" alt=""></span>Obtain a Healthy Summary Report</a>
+          </div>
+        </div>
+        <div class="text-right">
+          <a href="#" class="btn btn-link text-tiny-regular text-primary">More actions…</a>
+        </div>
+
+      </div>
+      <!-- end possible actions poup -->
 
       <!-- start conversation right (typing) -->
       <div class="text-right typing hide">
