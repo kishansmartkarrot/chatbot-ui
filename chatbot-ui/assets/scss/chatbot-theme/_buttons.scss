@@ -28,7 +28,7 @@
   font-weight: 600;
 
   &:hover {
-    background-color: $primary;
+    background-color: $secondary;
   }
 }
 
@@ -42,19 +42,22 @@
   background-color: transparent;
 
   &:hover {
-    background-color: $primary;
+    background-color: $white;
+    color: $primary;
+    border-color: $secondary;
+    box-shadow: 5px 10px 16px #4520AA34;
   }
 }
 
 .possible-actions-btn {
   position: relative;
-  width: 162px;
+  width: 180px;
   height: 40px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  background-color: $gray;
+  background-color: #d9d9ee;
   border-radius: 0px 10px 10px 10px;
   padding: 11px 16px;
   margin: 16px 0;
@@ -73,5 +76,12 @@
       top: 28px;
       object-fit: contain;
     }
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    color: $dark;
+    opacity: 0.8;
   }
 }

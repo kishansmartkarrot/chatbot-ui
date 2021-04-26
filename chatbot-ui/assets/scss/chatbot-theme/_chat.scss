@@ -44,15 +44,27 @@
 
 .conversation-text {
   font-style: italic;
-  font-style: 14px;
+  font-size: 14px;
   color: $dark;
-  opacity: 0.4;
+  font-weight: 400;
+  opacity: 0.5;
   margin-bottom: 0;
-  background-color: $chatInputChip;
-  padding: 15px;
+  background-color: $white;
+  padding: 6px 8px;
   border-radius: 10px;
-  display: inline-block;
+  // display: inline-block;
   margin-bottom: 16px;
+  margin-right: 2px;
+  margin-left: 2px;
+  border: 1px solid $border-light;
+
+  display: -webkit-inline-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  line-height: 2;
+  max-height: 75px;
+
 
   b {
     font-weight: 500;
@@ -63,8 +75,8 @@
 // chat petals
 .chat-petal-left {
   padding: 10px 16px;
-  border: 1px solid $info;
-  background-color: $gray;
+  border: 1px solid $purple;
+  background-color: $purple-1;
   width: max-content;
   border-radius: 10px;
   border-top-left-radius: 0px;
@@ -73,13 +85,16 @@
 
   p {
     margin-bottom: 0;
+    opacity: 0.8;
+    font-style: normal !important;
+    font-weight: 400;
   }
 }
 
 .chat-petal-right {
   padding: 10px 16px;
-  border: 1px solid $purple;
-  background-color: $purple-1;
+  border: 1px solid $info;
+  background-color: $gray;
   width: max-content;
   border-radius: 10px;
   border-top-right-radius: 0px;
@@ -88,6 +103,14 @@
 
   p {
     margin-bottom: 0;
+    opacity: 0.8;
+    font-style: normal !important;
+    font-weight: 400;
+
+    b {
+      font-weight: bold;
+      color: $dark;
+    }
   }
 
   span {

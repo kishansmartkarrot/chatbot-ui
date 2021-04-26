@@ -18,12 +18,12 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!-- animate css -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <title>Chatbot-7</title>
+  <title>Chatbot-8</title>
 </head>
 
 <body>
   <div class="container">
-    <img class="chat-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" src="assets/img/chat-icon.png" alt="">
+    <img type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" src="assets/img/chat-icon.png" alt="">
   </div>
 
   <div class="offcanvas offcanvas-end show" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-bs-keyboard="false">
@@ -41,7 +41,6 @@
         </div>
       </div>
       <ul class="avatar-list">
-
         <li>
           <div class="chatbot-avatar-bg">
             <img src="assets/img/chatbot-avatar.png" alt="">
@@ -70,7 +69,7 @@
     <div class="offcanvas-body">
 
       <!-- start chat left -->
-      <div class="text-left">
+      <div class="text-left mt-625">
         <div class="chatbot-profile-icon left-align">
           <div class="chatbot-avatar-bg">
             <img src="assets/img/chatbot-avatar.png" alt="">
@@ -80,65 +79,68 @@
           </div>
         </div>
         <div class="chat-petal-left me-auto">
-          <p class="text-small-italic">Here are the top 3 customer accounts at risk:</p>
+          <p class="text-small-regular-font">Here are the top 3 customer accounts at risk:</p>
         </div>
       </div>
-      <!-- start chat left -->
+      <!-- end chat left -->
 
       <!-- start risk summary cards -->
-      <div class="row">
-        <div class="col-4">
-          <div class="regular-card">
-            <div class="comapany-logo-name">
-              <div>
-                <img src="assets/img/company-1.png" alt="">
+      <!-- Note: This a tag is added for demo purpose only. Remove a tag for dynamic link  -->
+      <a class="link" href="page-4.html">
+        <div class="row">
+          <div class="col-4">
+            <div class="regular-card">
+              <div class="comapany-logo-name">
+                <div>
+                  <img src="assets/img/company-1.png" alt="">
+                </div>
+                <div>
+                  <p class="text-tiny-bold-font mb-0">Acme Inc.</p>
+                </div>
               </div>
-              <div>
-                <p class="text-tiny-bold-font mb-0">Acme Inc.</p>
-              </div>
+              <p class="text-tiny-regular position-relative mb-0"><span class="dot"></span><span class="points">&nbsp;3.2 &nbsp;&nbsp;&nbsp;<span class="text-danger">(-0.4)</span></span> </p>
+              <hr>
+              <p class="text-tiny-bold-font mb-0">Risk Summary</p>
+              <p class="text-tiny-regular mb-0">There are too many escalations!</p>
             </div>
-            <p class="text-tiny-regular position-relative mb-0"><span class="dot"></span><span class="points">&nbsp;3.2 &nbsp;&nbsp;&nbsp;<span class="text-danger">(-0.4)</span></span> </p>
-            <hr>
-            <p class="text-tiny-bold-font mb-0">Risk Summary</p>
-            <p class="text-tiny-regular mb-0">There are too many escalations!</p>
+          </div>
+          <div class="col-4">
+            <div class="regular-card">
+              <div class="comapany-logo-name">
+                <div>
+                  <img src="assets/img/company-2.png" alt="">
+                </div>
+                <div>
+                  <p class="text-tiny-bold-font mb-0">Acme Inc.</p>
+                </div>
+              </div>
+              <p class="text-tiny-regular position-relative mb-0"><span class="dot"></span><span class="points">&nbsp;3.9 &nbsp;&nbsp;&nbsp;<span class="text-danger">(-0.4)</span></span> </p>
+              <hr>
+              <p class="text-tiny-bold-font mb-0">Risk Summary</p>
+              <p class="text-tiny-regular mb-0">There is poor customer service!</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="regular-card">
+              <div class="comapany-logo-name">
+                <div>
+                  <img src="assets/img/company-3.png" alt="">
+                </div>
+                <div>
+                  <p class="text-tiny-bold-font mb-0">Acme Inc.</p>
+                </div>
+              </div>
+              <p class="text-tiny-regular position-relative mb-0"><span class="dot"></span><span class="points">&nbsp;3.6 &nbsp;&nbsp;&nbsp;<span class="text-danger">(-0.4)</span></span> </p>
+              <hr>
+              <p class="text-tiny-bold-font mb-0">Risk Summary</p>
+              <p class="text-tiny-regular mb-0">Stakeholder relationship is weak!</p>
+            </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="regular-card">
-            <div class="comapany-logo-name">
-              <div>
-                <img src="assets/img/company-2.png" alt="">
-              </div>
-              <div>
-                <p class="text-tiny-bold-font mb-0">Acme Inc.</p>
-              </div>
-            </div>
-            <p class="text-tiny-regular position-relative mb-0"><span class="dot"></span><span class="points">&nbsp;3.9 &nbsp;&nbsp;&nbsp;<span class="text-danger">(-0.4)</span></span> </p>
-            <hr>
-            <p class="text-tiny-bold-font mb-0">Risk Summary</p>
-            <p class="text-tiny-regular mb-0">There is poor customer service!</p>
-          </div>
-        </div>
-        <div class="col-4">
-          <div class="regular-card">
-            <div class="comapany-logo-name">
-              <div>
-                <img src="assets/img/company-3.png" alt="">
-              </div>
-              <div>
-                <p class="text-tiny-bold-font mb-0">Acme Inc.</p>
-              </div>
-            </div>
-            <p class="text-tiny-regular position-relative mb-0"><span class="dot"></span><span class="points">&nbsp;3.6 &nbsp;&nbsp;&nbsp;<span class="text-danger">(-0.4)</span></span> </p>
-            <hr>
-            <p class="text-tiny-bold-font mb-0">Risk Summary</p>
-            <p class="text-tiny-regular mb-0">Stakeholder relationship is weak!</p>
-          </div>
-        </div>
-      </div>
-      <!-- end risk summary cards -->
+      </a>
+      <!-- start risk summary cards -->
 
-      <!-- start possible action btn -->
+      <!-- start possible actions btn -->
       <div class="possible-actions-btn">
         <div>
           <img src="assets/img/a-icon.svg" alt="">
@@ -152,21 +154,68 @@
       </div>
       <!-- end possible action btn -->
 
-      <!-- start conversation -->
-      <div class="conversation">
-        <div class="text-right">
-          <p class="conversation-text">
-            Show me next set of account at risk
-          </p>
-
-          <p class="conversation-text">
-            Give me a summary of <b>‘Acme’</b>
-          </p>
+      <!-- start chat right section -->
+      <div class="text-right">
+        <div class="chatbot-profile-icon right-align">
+          <div>
+            <p class="text-small-bold-font">Karl</p>
+          </div>
+          <div class="chatbot-avatar-bg-transparent">
+            <img src="assets/img/profile.png" alt="">
+          </div>
+        </div>
+        <div class="chat-petal-right ms-auto">
+          <p class="text-small-italic"><b>Action requested:</b> Get an update from the CSM(s)on</p>
         </div>
       </div>
-      <!-- end conversation -->
+      <!-- end chat right section -->
 
-      <!-- start possible action popup -->
+      <!-- start chat left -->
+      <div class="text-left mt-625">
+        <div class="chatbot-profile-icon left-align">
+          <div class="chatbot-avatar-bg">
+            <img src="assets/img/chatbot-avatar.png" alt="">
+          </div>
+          <div>
+            <p class="text-small-bold-font">Xia</p>
+          </div>
+        </div>
+        <div class="action-requested-chat-card">
+          <p class="text-small-bold-font ml"> <span class="material-icons">check</span>
+            Email sent to CSM(s)!</p>
+          <p class="text-small-regular-font ">An email has been sent to the following CSM(s) requesting for an update.</p>
+          <ul>
+            <li>- <b>Jessica Baker</b> (Acme;Bourbon)</li>
+            <li>- <b>Tim Browne (Knob Creek)</b></li>
+          </ul>
+        </div>
+      </div>
+      <!-- end chat left -->
+
+      <!-- start conversation right (typing)  -->
+      <div class="text-right typing hide">
+        <div class="chatbot-profile-icon right-align">
+          <div>
+            <p class="text-small-bold-font">Karl</p>
+          </div>
+          <div class="chatbot-avatar-bg-transparent">
+            <img src="assets/img/profile.png" alt="">
+          </div>
+        </div>
+        <div class="chat-petal-right ms-auto">
+          <span>
+            <img class="animate__animated animate__heartBeat   animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
+          </span><span>
+            <img class="animate__animated animate__heartBeat    animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
+          </span><span>
+            <img class="animate__animated animate__heartBeat   animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
+          </span>
+        </div>
+      </div>
+      <!-- end conversation right (typing)  -->
+
+
+      <!-- start possible action popup modal -->
       <div class="possible-action-card Drawer js-drawer" hidden>
         <div class="header">
           <p class="ml-15 mb-0 text-tiny-regular heading-text">Possible actions you could take</p>
@@ -193,31 +242,10 @@
         <div class="text-right">
           <a href="#" class="btn btn-link text-tiny-regular text-primary">More actions…</a>
         </div>
-
       </div>
-      <!-- end possible action popup -->
+      <!-- end possible action popup modal -->
 
-      <!-- start conversation right (typing) -->
-      <div class="text-right typing hide">
-        <div class="chatbot-profile-icon right-align">
-          <div>
-            <p class="text-small-bold-font">Karl</p>
-          </div>
-          <div class="chatbot-avatar-bg-transparent">
-            <img src="assets/img/profile.png" alt="">
-          </div>
-        </div>
-        <div class="chat-petal-right ms-auto">
-          <span>
-            <img class="animate__animated animate__heartBeat   animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
-          </span><span>
-            <img class="animate__animated animate__heartBeat    animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
-          </span><span>
-            <img class="animate__animated animate__heartBeat   animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
-          </span>
-        </div>
-      </div>
-      <!-- end conversation right (typing) -->
+
 
       <!-- start input -->
       <div class="input-box">
@@ -233,7 +261,7 @@
           </div>
         </div>
       </div>
-      <!-- end input -->
+      <!-- end  input -->
 
     </div>
     <!-- end body -->

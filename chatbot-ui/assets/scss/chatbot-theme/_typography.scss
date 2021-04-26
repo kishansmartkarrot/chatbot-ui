@@ -13,6 +13,7 @@
   background-color: $white;
 }
 
+
 .title {
   font-family: 'Open Sans', sans-serif;
   color: $dark;
@@ -91,5 +92,13 @@
 }
 
 .text-special {
-  padding: 16px 0 32px 0;
+  padding: 0px 0 32px 0;
+}
+
+#why-important {
+  padding-top: 16px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
