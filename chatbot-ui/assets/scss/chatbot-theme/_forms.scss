@@ -25,6 +25,10 @@
   background-color: $primary;
   color: $white;
   cursor: pointer;
+
+  &:hover {
+    background-color: $secondary;
+  }
 }
 
 
@@ -37,7 +41,7 @@
     height: 15px;
     position: absolute;
     right: 85px;
-    z-index: 1;
+    z-index: 111;
     top: 20px;
     cursor: pointer;
   }

@@ -45,9 +45,15 @@
 // regular-card
 .regular-card {
   cursor: pointer;
-  background-color: $gray;
+  background-color: $bg-card;
   padding: 15px;
   border-radius: 8px;
+  border: 1px solid $border-light;
+
+  hr {
+    border-top: 1px solid $dark;
+    opacity: 0.2;
+  }
 
   .points {
     display: inline-block;
@@ -87,8 +93,14 @@
 .details-card {
   cursor: pointer;
   border-radius: 8px;
-  background-color: $gray;
+  background-color: $bg-card;
   padding: 15px;
+  border: 1px solid $border-light;
+
+  hr {
+    border-top: 1px solid $dark;
+    opacity: 0.2;
+  }
 
   .points {
     display: inline-block;
@@ -121,7 +133,7 @@
 
 // possible action card
 .possible-action-card {
-  background-color: $gray;
+  background-color: $input;
   width: 100%;
   border-radius: 10px 10px 0px 0px;
   padding: 16px;
@@ -129,7 +141,7 @@
   position: absolute;
   width: calc(100% - 60px);
   bottom: 0;
-  z-index: 111;
+  z-index: 1111;
 
   .text-primary {
     color: $primary !important;
@@ -140,6 +152,7 @@
   .close {
     position: absolute;
     right: 5px;
+    cursor: pointer;
   }
 
   .text-right {
@@ -147,14 +160,16 @@
   }
 
   .list-item {
-    border: 1px solid $info;
+    border: 1px solid $border-lighter;
     border-radius: 8px;
     height: 32px;
     width: 100%;
     justify-content: flex-start;
     align-items: center;
     display: flex;
+    background-color: $white;
     margin-bottom: 8px;
+    cursor: pointer;
 
     span {
       img {
@@ -169,6 +184,14 @@
     p {
       margin-bottom: 0;
       margin-left: 13px;
+      color: $dark !important;
+    }
+
+    a {
+      margin-bottom: 0;
+      margin-left: 13px;
+      color: $dark !important;
+      text-decoration: none;
     }
   }
 
@@ -187,6 +210,10 @@
   .heading-text {
     display: inline-block;
     margin-left: 35px;
+    color: $dark;
+    font-weight: bold !important;
+    margin-top: 6px;
+
   }
 
   .title {
@@ -203,4 +230,61 @@
       }
     }
   }
+}
+
+.action-requested-chat-card {
+  padding: 20px;
+  border: 1px solid $border-light;
+  background-color: $bg-card;
+  border-radius: 8px;
+  margin-top: 10px;
+  position: relative;
+  width: 415px;
+  margin-bottom: 16px;
+
+  span {
+    font-size: 12px;
+    width: 15px;
+    height: 15px;
+    background-color: #38b4b2;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 1.4;
+    position: absolute;
+    top: 23px;
+    left: 20px;
+  }
+
+  .ml {
+    margin-left: 30px;
+  }
+
+
+
+  p {
+    opacity: 0.8;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      font-family: 'Open Sans',
+        sans-serif;
+      font-weight: 400;
+      color: #2D2E31;
+      font-size: 14px;
+      opacity: 0.8;
+
+      b {
+        font-weight: 600;
+        color: $dark;
+        opacity: 1;
+      }
+    }
+  }
+
 }

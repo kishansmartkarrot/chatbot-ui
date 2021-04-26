@@ -44,17 +44,20 @@
 
 .conversation-text {
   font-style: italic;
-  font-style: 14px;
+  font-size: 14px;
   color: $dark;
-  opacity: 0.4;
+  font-weight: 400;
+  opacity: 0.5;
   margin-bottom: 0;
-  background-color: $chatInputChip;
-  padding: 15px;
+  background-color: $white;
+  padding: 10px 15px;
   border-radius: 10px;
   display: inline-block;
   margin-bottom: 16px;
   margin-right: 8px;
   margin-left: 8px;
+  border: 1px solid $border-light;
+
 
   b {
     font-weight: 500;
@@ -75,6 +78,7 @@
 
   p {
     margin-bottom: 0;
+    opacity: 0.8;
   }
 }
 
@@ -90,6 +94,14 @@
 
   p {
     margin-bottom: 0;
+    opacity: 0.8;
+    font-style: normal !important;
+    font-weight: 400;
+
+    b {
+      font-weight: bold;
+      color: $dark;
+    }
   }
 
   span {
