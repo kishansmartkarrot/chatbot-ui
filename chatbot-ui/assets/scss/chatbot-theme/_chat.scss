@@ -53,6 +53,8 @@
   border-radius: 10px;
   display: inline-block;
   margin-bottom: 16px;
+  margin-right: 8px;
+  margin-left: 8px;
 
   b {
     font-weight: 500;
@@ -63,8 +65,8 @@
 // chat petals
 .chat-petal-left {
   padding: 10px 16px;
-  border: 1px solid $info;
-  background-color: $gray;
+  border: 1px solid $purple;
+  background-color: $purple-1;
   width: max-content;
   border-radius: 10px;
   border-top-left-radius: 0px;
@@ -78,8 +80,8 @@
 
 .chat-petal-right {
   padding: 10px 16px;
-  border: 1px solid $purple;
-  background-color: $purple-1;
+  border: 1px solid $info;
+  background-color: $gray;
   width: max-content;
   border-radius: 10px;
   border-top-right-radius: 0px;

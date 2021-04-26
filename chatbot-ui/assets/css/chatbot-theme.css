@@ -11,7 +11,8 @@
   margin-bottom: 0;
   padding-left: 16px;
   padding-right: 16px;
-  background-color: #fff; }
+  background-color: #fff;
+  margin-left: -16px; }
 
 .title {
   font-family: 'Open Sans', sans-serif;
@@ -72,7 +73,10 @@
   color: #6746EE !important; }
 
 .text-special {
-  padding: 16px 0 32px 0; }
+  padding: 0px 0 32px 0; }
+
+#why-important {
+  padding-top: 16px; }
 
 .form-control {
   border-radius: 10px;
@@ -106,20 +110,29 @@
   top: 20px;
   cursor: pointer; }
 
-#input-box {
-  font-style: italic; }
-  #input-box ::-webkit-input-placeholder {
-    /* Chrome/Opera/Safari */
-    color: pink !important; }
-  #input-box ::-moz-placeholder {
-    /* Firefox 19+ */
-    color: pink !important; }
-  #input-box :-ms-input-placeholder {
-    /* IE 10+ */
-    color: pink !important; }
-  #input-box :-moz-placeholder {
-    /* Firefox 18- */
-    color: pink !important; }
+#input-box::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #2D2E31 !important;
+  opacity: 0.7;
+  font-style: italic !important; }
+
+#input-box::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #2D2E31 !important;
+  opacity: 0.7;
+  font-style: italic !important; }
+
+#input-box:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #2D2E31 !important;
+  opacity: 0.7;
+  font-style: italic !important; }
+
+#input-box:-moz-placeholder {
+  /* Firefox 18- */
+  color: #2D2E31 !important;
+  opacity: 0.7;
+  font-style: italic !important; }
 
 .info-card {
   cursor: pointer;
@@ -328,7 +341,7 @@
         width: 15px;
         height: 15px;
         position: absolute;
-        left: 56%;
+        left: 50%;
         top: 50%;
         transform: translate(-50%, -50%); }
 
@@ -370,14 +383,16 @@
   padding: 15px;
   border-radius: 10px;
   display: inline-block;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  margin-right: 8px;
+  margin-left: 8px; }
   .conversation-text b {
     font-weight: 500; }
 
 .chat-petal-left {
   padding: 10px 16px;
-  border: 1px solid #9BCFED;
-  background-color: #F6F6FD;
+  border: 1px solid #AFA0ED;
+  background-color: #EDE6FF;
   width: max-content;
   border-radius: 10px;
   border-top-left-radius: 0px;
@@ -388,8 +403,8 @@
 
 .chat-petal-right {
   padding: 10px 16px;
-  border: 1px solid #AFA0ED;
-  background-color: #EDE6FF;
+  border: 1px solid #9BCFED;
+  background-color: #F6F6FD;
   width: max-content;
   border-radius: 10px;
   border-top-right-radius: 0px;
@@ -458,6 +473,9 @@
 
 .ml-15 {
   margin-left: 15px; }
+
+.ml-0 {
+  margin-left: 0px !important; }
 
 .mt-625 {
   margin-top: 0.625rem; }
@@ -579,7 +597,7 @@
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  background-color: #F6F6FD;
+  background-color: #d9d9ee;
   border-radius: 0px 10px 10px 10px;
   padding: 11px 16px;
   margin: 16px 0;

@@ -11,7 +11,9 @@
   padding-left: 16px;
   padding-right: 16px;
   background-color: $white;
+  margin-left: -16px;
 }
+
 
 .title {
   font-family: 'Open Sans', sans-serif;
@@ -91,5 +93,9 @@
 }
 
 .text-special {
-  padding: 16px 0 32px 0;
+  padding: 0px 0 32px 0;
+}
+
+#why-important {
+  padding-top: 16px
 }
