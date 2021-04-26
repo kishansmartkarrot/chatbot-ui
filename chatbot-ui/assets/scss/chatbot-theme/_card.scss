@@ -51,8 +51,8 @@
   border: 1px solid $border-light;
 
   hr {
-    border-top: 1px solid $dark;
-    opacity: 0.2;
+    border-top: 2px solid #2D2E31;
+    opacity: 0.1;
   }
 
   .points {
@@ -287,4 +287,11 @@
     }
   }
 
+}
+
+.risk-summary-card-row {
+  .col-4 {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
