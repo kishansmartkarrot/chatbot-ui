@@ -26,3 +26,8 @@ $(document).ready(function () {
             .attr('src', '../../assets/img/microphone-alt-solid.svg')
     })
 })
+$(document).ready(function () {
+    setTimeout(function () {
+        $("input[name='input-box']").focus()
+    }, 1000)
+})
