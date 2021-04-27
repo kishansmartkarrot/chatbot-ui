@@ -52,14 +52,14 @@
         </li>
         <li>
           <span>
-            <img src="assets/img/Icon feather-user-plus-new.svg" alt="smartkarrot">
-            <img src="assets/img/add-avatar-circle.svg" alt="smartkarrot">
+            <span class="circle"></span>
+            <img class="profile-icon" src="assets/img/Icon feather-user-plus-new.svg" alt="smartkarrot">
           </span>
         </li>
       </ul>
       <a data-bs-dismiss="offcanvas">
         <div class="close-icon">
-          <img src="assets/img/arrow.svg" alt="">
+          <img class="arrow-right" src="assets/img/arrow-right.svg" alt="">
         </div>
       </a>
     </div>
@@ -118,7 +118,7 @@
               <p class="text-tiny-regular position-relative mb-0"><span class="dot"></span><span class="points">&nbsp;3.9 &nbsp;&nbsp;&nbsp;<span class="text-danger">(-0.4)</span></span> </p>
               <hr>
               <p class="text-tiny-bold-font mb-0">Risk Summary</p>
-              <p  title="There is poor customer service!" class="text-tiny-regular mb-0">There is poor customer service!</p>
+              <p title="There is poor customer service!" class="text-tiny-regular mb-0">There is poor customer service!</p>
             </div>
           </div>
           <div class="col-4">
@@ -227,19 +227,21 @@
 
 
       <!-- start input -->
-      <div class="input-box">
-        <div class="position-relative">
-          <div class="mic-icon">
-            <img src="assets/img/microphone-alt-solid.svg" alt="smartkarrot">
-          </div>
-          <div class="input-group">
-            <input id="input-box" type="text" class="form-control" placeholder="Need something… Type here or ask me!" aria-label="Username" aria-describedby="basic-addon1">
-            <span class="input-group-text" id="basic-addon1">
-              <img src="assets/img/ionic-ios-send.svg" alt="smartkarrot">
-            </span>
+      <form id="inputForm">
+        <div class="input-box">
+          <div class="position-relative">
+            <div class="mic-icon">
+              <img src="assets/img/microphone-alt-solid.svg" alt="smartkarrot">
+            </div>
+            <div class="input-group">
+              <input name="input-box" id="input-box" type="text" class="form-control" placeholder="Need something… Type here or ask me!" aria-label="Username" aria-describedby="basic-addon1">
+              <span class="input-group-text" id="basic-addon1">
+                <img src="assets/img/ionic-ios-send.svg" alt="smartkarrot">
+              </span>
+            </div>
           </div>
         </div>
-      </div>
+      </form>
       <!-- end  input -->
 
     </div>

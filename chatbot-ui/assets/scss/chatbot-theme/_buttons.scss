@@ -43,7 +43,7 @@
 
   &:hover {
     background-color: $white;
-    color: $primary;
+    color: $secondary;
     border-color: $secondary;
     box-shadow: 5px 10px 16px #4520AA34;
   }
@@ -62,6 +62,7 @@
   padding: 11px 16px;
   margin: 16px 0;
   cursor: pointer;
+  border: 1px solid #d9d9ee;
 
   img {
     &:first-child {
@@ -83,5 +84,11 @@
     font-weight: 400;
     color: $dark;
     opacity: 0.8;
+  }
+
+  &:hover {
+    border: 1px solid #AFA0ED;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+    background-color: #dbdbf1;
   }
 }

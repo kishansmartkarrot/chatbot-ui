@@ -35,16 +35,28 @@
 
 // custom input styles
 .mic-icon {
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.3;
+  position: absolute;
+  right: 85px;
+  z-index: 111;
+  top: 18px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #BFBFBF;
+  }
+
   img {
     width: 15px;
     height: 15px;
     width: 15px;
     height: 15px;
-    position: absolute;
-    right: 85px;
-    z-index: 111;
-    top: 20px;
-    cursor: pointer;
+
   }
 
 }
