@@ -209,7 +209,7 @@
     margin-left: 15px;
     margin-top: 12px; }
     .regular-card .points span {
-      padding-left: 10px;
+      padding-left: 0px;
       display: inline-block; }
   .regular-card .comapany-logo-name {
     display: flex;
