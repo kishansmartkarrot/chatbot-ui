@@ -43,6 +43,11 @@ $(document).ready(function () {
             .attr('src', '../../assets/img/microphone-alt-solid.svg')
     })
 })
+$(document).ready(function () {
+    setTimeout(function () {
+        $("input[name='input-box']").focus()
+    }, 1000)
+})
 // drawer
 const drawerTransitioner = transitionHiddenElement({
     element: document.querySelector('.js-drawer'),
