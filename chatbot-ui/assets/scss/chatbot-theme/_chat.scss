@@ -3,9 +3,14 @@
 // cahtbot avatar
 .chatbot-avatar-bg {
   background-color: $primary;
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
+
+  &:hover {
+    background-color: $secondary;
+  }
+
 }
 
 // chat profile icon
@@ -36,8 +41,8 @@
 
   .chatbot-avatar-bg {
     background-color: $primary;
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%;
   }
 }
@@ -71,6 +76,13 @@
     opacity: 1;
     color: #000;
   }
+
+  &:hover {
+    border: 1px solid $border-dark;
+    color: $dark;
+    opacity: 0.9;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
+  }
 }
 
 
@@ -97,6 +109,36 @@
   padding: 10px 16px;
   border: 1px solid $info;
   background-color: $gray;
+  width: max-content;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  margin-bottom: 16px;
+  margin-top: 10px;
+
+  p {
+    margin-bottom: 0;
+    opacity: 0.8;
+    font-style: normal !important;
+    font-weight: 400;
+
+    b {
+      font-weight: bold;
+      color: $dark;
+    }
+  }
+
+  span {
+    display: inline-block;
+    margin-right: 8px;
+  }
+}
+
+.action-requested-petal {
+  background-color: #E1F2FD !important;
+  border: 1px solid #E1F2FD !important;
+  padding: 10px 16px;
+  // border: 1px solid $info;
+  // background-color: $gray;
   width: max-content;
   border-radius: 10px;
   border-top-right-radius: 0px;

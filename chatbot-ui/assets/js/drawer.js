@@ -20,7 +20,29 @@ $('#input-box').keyup(function () {
 $('.input-group-text').on('click', function () {
     window.location.replace('page-5.html')
 })
+$(document).ready(function () {
+    $('input[name=input-box]').trigger('click')
+    $('.js-close-button').mouseenter(function () {
+        $(this)
+            .find('img')
+            .attr('src', '../../assets/img/ionic-ios-close-black.svg')
+    })
 
+    $('.js-close-button').mouseleave(function () {
+        $(this).find('img').attr('src', '../../assets/img/ionic-ios-close.svg')
+    })
+    $('.mic-icon').mouseenter(function () {
+        $(this)
+            .find('img')
+            .attr('src', '../../assets/img/microphone-alt-solid-black.svg')
+    })
+
+    $('.mic-icon').mouseleave(function () {
+        $(this)
+            .find('img')
+            .attr('src', '../../assets/img/microphone-alt-solid.svg')
+    })
+})
 // drawer
 const drawerTransitioner = transitionHiddenElement({
     element: document.querySelector('.js-drawer'),

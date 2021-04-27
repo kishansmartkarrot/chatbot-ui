@@ -103,16 +103,25 @@
   .input-group-text:hover {
     background-color: #4520aa; }
 
-.mic-icon img {
-  width: 15px;
-  height: 15px;
-  width: 15px;
-  height: 15px;
+.mic-icon {
+  width: 22px;
+  height: 22px;
+  background-color: transparent;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1.3;
   position: absolute;
   right: 85px;
   z-index: 111;
-  top: 20px;
+  top: 18px;
   cursor: pointer; }
+  .mic-icon:hover {
+    background-color: #BFBFBF; }
+  .mic-icon img {
+    width: 15px;
+    height: 15px;
+    width: 15px;
+    height: 15px; }
 
 #input-box::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
@@ -157,7 +166,14 @@
   height: 72px;
   border-radius: 10px;
   padding: 16px;
-  cursor: pointer; }
+  cursor: pointer;
+  border: 1px solid #F6F6FD;
+  text-decoration: none !important; }
+  .info-card:hover {
+    border: 1px solid #E5E5E8;
+    text-decoration: none; }
+    .info-card:hover .icon {
+      background-color: #4520aa; }
   .info-card .icon {
     background-color: #6746EE;
     width: 40px;
@@ -168,7 +184,7 @@
     position: relative;
     margin-right: 16px; }
     .info-card .icon .line-1, .info-card .icon .line-2 {
-      left: 16px;
+      left: 17px;
       width: 6px;
       height: 2px;
       background-color: #fff;
@@ -177,7 +193,7 @@
     .info-card .icon .line-2 {
       width: 3px;
       top: 29px;
-      left: 17px; }
+      left: 18px; }
 
 .regular-card {
   cursor: pointer;
@@ -207,6 +223,8 @@
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden; }
+  .regular-card:hover {
+    border: 1px solid #c0bebed9; }
 
 .chatbot-icon-card {
   cursor: pointer;
@@ -242,6 +260,8 @@
     .details-card .company-logo-div img {
       border-radius: 3px;
       margin-right: 12px; }
+  .details-card:hover {
+    border: 1px solid #c0bebed9; }
 
 .possible-action-card {
   background-color: #EFEFEF;
@@ -254,6 +274,12 @@
   z-index: 1111;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   border: 1px solid #E5E5E8; }
+  .possible-action-card:hover {
+    border: 1px solid #c0bebed9; }
+  .possible-action-card .btn-link:hover {
+    color: #4520aa !important;
+    font-weight: 600;
+    text-decoration: underline; }
   .possible-action-card .text-primary {
     color: #6746EE !important;
     text-decoration: none;
@@ -261,7 +287,20 @@
   .possible-action-card .close {
     position: absolute;
     right: 5px;
-    cursor: pointer; }
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 1.2; }
+    .possible-action-card .close:hover {
+      width: 20px;
+      height: 20px;
+      background-color: #bfbfbf;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 1.2; }
   .possible-action-card .text-right {
     text-align: right; }
   .possible-action-card .list-item {
@@ -275,6 +314,9 @@
     background-color: #fff;
     margin-bottom: 8px;
     cursor: pointer; }
+    .possible-action-card .list-item:hover {
+      border: 1px solid #c0bebed9;
+      color: #2D2E31; }
     .possible-action-card .list-item span img {
       margin-top: -4px; }
       .possible-action-card .list-item span img:nth-child(2) {
@@ -318,7 +360,10 @@
   margin-top: 10px;
   position: relative;
   width: 415px;
-  margin-bottom: 16px; }
+  margin-bottom: 16px;
+  z-index: 1111; }
+  .action-requested-chat-card:hover {
+    border: 1px solid #c0bebed9; }
   .action-requested-chat-card span {
     font-size: 12px;
     width: 15px;
@@ -332,7 +377,7 @@
     top: 23px;
     left: 20px; }
   .action-requested-chat-card .ml {
-    margin-left: 30px;
+    margin-left: 25px;
     color: #000;
     margin-bottom: 15px; }
   .action-requested-chat-card p {
@@ -358,17 +403,31 @@
 
 .close-icon {
   cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #3b2ae069;
+  opacity: 1;
+  background-color: #fff;
+  z-index: 111;
   position: relative;
   width: 36px;
   height: 36px;
   background: white;
   z-index: 111;
-  margin-top: 10px; }
+  margin-top: 11px; }
+  .close-icon:hover {
+    border: 1px solid #3B2AE0;
+    box-shadow: 0 .5rem 1rem #4520aa5c !important;
+    opacity: 0.8; }
+    .close-icon:hover .arrow-right {
+      opacity: 1; }
   .close-icon img:first-child {
     position: absolute;
     left: 50%;
     top: 50%;
-    transform: translate(-50%, -50%); }
+    transform: translate(-50%, -50%);
+    width: 20px;
+    height: 20px;
+    opacity: 0.5; }
 
 .line {
   border: 1px solid #3B2AE0;
@@ -400,8 +459,8 @@
       opacity: 0.6; }
 
 .avatar, .avatar-list li .profile {
-  width: 37px;
-  height: 37px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%; }
 
 .avatar-list {
@@ -415,24 +474,43 @@
   z-index: 111; }
   .avatar-list li {
     padding-right: 9px;
-    cursor: pointer; }
-    .avatar-list li span {
+    cursor: pointer;
+    position: relative; }
+    .avatar-list li:last-child:hover .circle {
+      box-shadow: 0 .5rem 1rem #4520aa5c !important;
+      border: 1px solid #4520aa;
+      opacity: 0.8; }
+    .avatar-list li .profile:hover {
+      border: 1px solid #6746EE;
+      box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
+    .avatar-list li .circle {
       position: relative;
       opacity: 0.7;
-      background-color: #fff; }
-      .avatar-list li span img:first-child {
-        width: 15px;
-        height: 15px;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%); }
+      width: 36px;
+      height: 36px;
+      background-color: #fff;
+      border-radius: 50%;
+      border: 1px solid #3B2AE0;
+      display: inline-block;
+      opacity: 0.5;
+      text-align: center; }
+    .avatar-list li .profile-icon {
+      width: 15px;
+      height: 15px;
+      position: absolute;
+      left: 44%;
+      top: 44%;
+      transform: translate(-50%, -50%);
+      opacity: 0.8;
+      z-index: 1; }
 
 .chatbot-avatar-bg {
   background-color: #6746EE;
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%; }
+  .chatbot-avatar-bg:hover {
+    background-color: #4520aa; }
 
 .left-align {
   justify-content: flex-start; }
@@ -452,8 +530,8 @@
     margin-bottom: 0; }
   .chatbot-profile-icon .chatbot-avatar-bg {
     background-color: #6746EE;
-    width: 34px;
-    height: 34px;
+    width: 36px;
+    height: 36px;
     border-radius: 50%; }
 
 .conversation-text {
@@ -480,6 +558,11 @@
     font-weight: 500;
     opacity: 1;
     color: #000; }
+  .conversation-text:hover {
+    border: 1px solid #c0bebed9;
+    color: #2D2E31;
+    opacity: 0.9;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
 
 .chat-petal-left {
   padding: 10px 16px;
@@ -514,6 +597,27 @@
       font-weight: bold;
       color: #2D2E31; }
   .chat-petal-right span {
+    display: inline-block;
+    margin-right: 8px; }
+
+.action-requested-petal {
+  background-color: #E1F2FD !important;
+  border: 1px solid #E1F2FD !important;
+  padding: 10px 16px;
+  width: max-content;
+  border-radius: 10px;
+  border-top-right-radius: 0px;
+  margin-bottom: 16px;
+  margin-top: 10px; }
+  .action-requested-petal p {
+    margin-bottom: 0;
+    opacity: 0.8;
+    font-style: normal !important;
+    font-weight: 400; }
+    .action-requested-petal p b {
+      font-weight: bold;
+      color: #2D2E31; }
+  .action-requested-petal span {
     display: inline-block;
     margin-right: 8px; }
 
@@ -616,7 +720,8 @@
   padding: 32px 32px 10px 32px; }
 
 .offcanvas-body {
-  padding: 10px 32px 10px 32px; }
+  padding: 10px 32px 10px 32px;
+  margin-bottom: 100px; }
 
 .input-box {
   position: absolute;
@@ -755,7 +860,7 @@ a {
   background-color: transparent; }
   .btn-outline-primary:hover {
     background-color: #fff;
-    color: #6746EE;
+    color: #4520aa;
     border-color: #4520aa;
     box-shadow: 5px 10px 16px #4520AA34; }
 
@@ -771,7 +876,8 @@ a {
   border-radius: 0px 10px 10px 10px;
   padding: 11px 16px;
   margin: 16px 0;
-  cursor: pointer; }
+  cursor: pointer;
+  border: 1px solid #d9d9ee; }
   .possible-actions-btn img:first-child {
     margin-right: 14px; }
   .possible-actions-btn span img {
@@ -784,3 +890,7 @@ a {
     font-weight: 400;
     color: #2D2E31;
     opacity: 0.8; }
+  .possible-actions-btn:hover {
+    border: 1px solid #AFA0ED;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    background-color: #dbdbf1; }

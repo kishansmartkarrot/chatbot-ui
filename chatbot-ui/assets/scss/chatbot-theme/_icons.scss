@@ -3,6 +3,21 @@
 // close icons
 .close-icon {
   cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #3b2ae069;
+  opacity: 1;
+  background-color: $white;
+  z-index: 111;
+
+  &:hover {
+    border: 1px solid $border;
+    box-shadow: 0 .5rem 1rem #4520aa5c !important;
+    opacity: 0.8;
+
+    .arrow-right {
+      opacity: 1;
+    }
+  }
 
   img {
     &:first-child {
@@ -10,6 +25,9 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      opacity: 0.5;
     }
   }
 
@@ -18,7 +36,7 @@
   height: 36px;
   background: white;
   z-index: 111;
-  margin-top: 10px;
+  margin-top: 11px;
 }
 
 // line
