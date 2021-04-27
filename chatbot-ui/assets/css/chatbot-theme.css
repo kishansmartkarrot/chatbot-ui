@@ -251,7 +251,9 @@
   position: absolute;
   width: calc(100% - 60px);
   bottom: 0;
-  z-index: 1111; }
+  z-index: 1111;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+  border: 1px solid #E5E5E8; }
   .possible-action-card .text-primary {
     color: #6746EE !important;
     text-decoration: none;
@@ -330,7 +332,9 @@
     top: 23px;
     left: 20px; }
   .action-requested-chat-card .ml {
-    margin-left: 30px; }
+    margin-left: 30px;
+    color: #000;
+    margin-bottom: 15px; }
   .action-requested-chat-card p {
     opacity: 0.8; }
   .action-requested-chat-card ul {
@@ -473,7 +477,9 @@
   line-height: 2;
   max-height: 75px; }
   .conversation-text b {
-    font-weight: 500; }
+    font-weight: 500;
+    opacity: 1;
+    color: #000; }
 
 .chat-petal-left {
   padding: 10px 16px;
