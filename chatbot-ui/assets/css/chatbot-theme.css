@@ -847,6 +847,9 @@ a {
     color: #fff;
     text-align: center; }
 
+.scroll-top {
+  margin-bottom: 65vh; }
+
 .btn-lg {
   height: 56px; }
 
