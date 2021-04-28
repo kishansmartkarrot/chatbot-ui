@@ -12,6 +12,7 @@ $('#input-box').keydown(function () {
         .removeClass('hide')
         .addClass('animate__fadeIn animate__animated')
 })
+// typing animation
 $('#input-box').keyup(function () {
     setTimeout(function () {
         $('.typing').addClass('hide')
@@ -20,34 +21,11 @@ $('#input-box').keyup(function () {
 $('.input-group-text').on('click', function () {
     window.location.replace('page-5.html')
 })
-$(document).ready(function () {
-    $('input[name=input-box]').trigger('click')
-    $('.js-close-button').mouseenter(function () {
-        $(this)
-            .find('img')
-            .attr('src', '../../assets/img/ionic-ios-close-black.svg')
-    })
 
-    $('.js-close-button').mouseleave(function () {
-        $(this).find('img').attr('src', '../../assets/img/ionic-ios-close.svg')
-    })
-    $('.mic-icon').mouseenter(function () {
-        $(this)
-            .find('img')
-            .attr('src', '../../assets/img/microphone-alt-solid-black.svg')
-    })
+// $(document).ready(function () {
+//     $('input[name=input-box]').trigger('click')
+// })
 
-    $('.mic-icon').mouseleave(function () {
-        $(this)
-            .find('img')
-            .attr('src', '../../assets/img/microphone-alt-solid.svg')
-    })
-})
-$(document).ready(function () {
-    setTimeout(function () {
-        $("input[name='input-box']").focus()
-    }, 1000)
-})
 // drawer
 const drawerTransitioner = transitionHiddenElement({
     element: document.querySelector('.js-drawer'),

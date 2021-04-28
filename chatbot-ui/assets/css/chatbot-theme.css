@@ -553,7 +553,8 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   line-height: 2;
-  max-height: 75px; }
+  max-height: 75px;
+  cursor: pointer; }
   .conversation-text b {
     font-weight: 500;
     opacity: 1;
@@ -562,7 +563,8 @@
     border: 1px solid #c0bebed9;
     color: #2D2E31;
     opacity: 0.7;
-    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important; }
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+    cursor: pointer; }
 
 .chat-petal-left {
   padding: 10px 16px;
@@ -844,6 +846,9 @@ a {
     font-size: 18px;
     color: #fff;
     text-align: center; }
+
+.scroll-top {
+  margin-bottom: 65vh; }
 
 .btn-lg {
   height: 56px; }

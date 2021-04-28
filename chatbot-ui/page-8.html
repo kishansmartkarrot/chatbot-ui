@@ -21,9 +21,9 @@
   <title>Chatbot-8</title>
 </head>
 
-<body>
+<body ID="page-8">
   <div class="container">
-    <img type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" src="assets/img/chat-icon.png" alt="">
+    <img class="chat-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" src="assets/img/chat-icon.png" alt="">
   </div>
 
   <div class="offcanvas offcanvas-end show shadow-lg" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-bs-keyboard="false">
@@ -154,65 +154,71 @@
       </div>
       <!-- end possible action btn -->
 
-      <!-- start chat right section -->
-      <div class="text-right">
-        <div class="chatbot-profile-icon right-align">
-          <div>
-            <p class="text-small-bold-font">Karl</p>
-          </div>
-          <div class="chatbot-avatar-bg-transparent">
-            <img src="assets/img/profile.png" alt="">
-          </div>
-        </div>
-        <div class="  action-requested-petal ms-auto">
-          <p class="text-small-italic"><b>Action requested:</b> Get an update from the CSM(s)on</p>
-        </div>
-      </div>
-      <!-- end chat right section -->
 
-      <!-- start chat left -->
-      <div class="text-left mt-625">
-        <div class="chatbot-profile-icon left-align">
-          <div class="chatbot-avatar-bg">
-            <img src="assets/img/chatbot-avatar.png" alt="">
+      <div class="scroll-top">
+        <!-- start chat right section -->
+        <div class="text-right">
+          <div class="chatbot-profile-icon right-align">
+            <div>
+              <p class="text-small-bold-font">Karl</p>
+            </div>
+            <div class="chatbot-avatar-bg-transparent">
+              <img src="assets/img/profile.png" alt="">
+            </div>
           </div>
-          <div>
-            <p class="text-small-bold-font">Xia</p>
+          <div class="  action-requested-petal ms-auto">
+            <p class="text-small-italic"><b>Action requested:</b> Get an update from the CSM(s)on</p>
           </div>
         </div>
-        <div class="action-requested-chat-card">
-          <p class="text-small-bold-font ml"> <span class="material-icons">check</span>
-            Email sent to CSM(s)!</p>
-          <p class="text-small-regular-font ">An email has been sent to the following CSM(s) requesting for an update.</p>
-          <ul>
-            <li>- <b>Jessica Baker</b> (Acme;Bourbon)</li>
-            <li>- <b>Tim Browne (Knob Creek)</li>
-          </ul>
-        </div>
-      </div>
-      <!-- end chat left -->
+        <!-- end chat right section -->
 
-      <!-- start conversation right (typing)  -->
-      <div class="text-right typing hide">
-        <div class="chatbot-profile-icon right-align">
-          <div>
-            <p class="text-small-bold-font">Karl</p>
+        <!-- start chat left -->
+        <div class="text-left mt-625">
+          <div class="chatbot-profile-icon left-align">
+            <div class="chatbot-avatar-bg">
+              <img src="assets/img/chatbot-avatar.png" alt="">
+            </div>
+            <div>
+              <p class="text-small-bold-font">Xia</p>
+            </div>
           </div>
-          <div class="chatbot-avatar-bg-transparent">
-            <img src="assets/img/profile.png" alt="">
+          <div class="action-requested-chat-card">
+            <p class="text-small-bold-font ml"> <span class="material-icons">check</span>
+              Email sent to CSM(s)!</p>
+            <p class="text-small-regular-font ">An email has been sent to the following CSM(s) requesting for an update.</p>
+            <ul>
+              <li>- <b>Jessica Baker</b> (Acme;Bourbon)</li>
+              <li>- <b>Tim Browne (Knob Creek)</li>
+            </ul>
           </div>
         </div>
-        <div class="chat-petal-right ms-auto">
-          <span>
-            <img class="animate__animated animate__heartBeat   animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
-          </span><span>
-            <img class="animate__animated animate__heartBeat    animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
-          </span><span>
-            <img class="animate__animated animate__heartBeat   animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
-          </span>
+        <!-- end chat left -->
+
+        <!-- start conversation right (typing)  -->
+        <div class="text-right typing hide">
+          <div class="chatbot-profile-icon right-align">
+            <div>
+              <p class="text-small-bold-font">Karl</p>
+            </div>
+            <div class="chatbot-avatar-bg-transparent">
+              <img src="assets/img/profile.png" alt="">
+            </div>
+          </div>
+          <div class="chat-petal-right ms-auto">
+            <span>
+              <img class="animate__animated animate__heartBeat   animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
+            </span><span>
+              <img class="animate__animated animate__heartBeat    animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
+            </span><span>
+              <img class="animate__animated animate__heartBeat   animate__slow  animate__infinite" src="assets/img/dot-1.svg" alt="">
+            </span>
+          </div>
         </div>
+        <!-- end conversation right (typing)  -->
       </div>
-      <!-- end conversation right (typing)  -->
+
+
+
 
 
       <!-- start possible action popup modal -->
@@ -253,7 +259,7 @@
               <img src="assets/img/microphone-alt-solid.svg" alt="smartkarrot">
             </div>
             <div class="input-group">
-              <input name="input-box" id="input-box" type="text" class="form-control" placeholder="Need something… Type here or ask me!"  >
+              <input name="input-box" id="input-box" type="text" class="form-control" placeholder="Need something… Type here or ask me!">
               <span class="input-group-text" id="basic-addon1">
                 <img src="assets/img/ionic-ios-send.svg" alt="smartkarrot">
               </span>
@@ -269,6 +275,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
   <script src="assets/js/drawer.js"></script>
+  <script src="assets/js/util.js"></script>
+
 </body>
 
 </html>
