@@ -1,9 +1,17 @@
 $(document).ready(function () {
     var pageId = $('body').attr('id')
+
+    $('.chat-icon').on('click', function () {
+        // set auto focus to inputbox
+        autoFocusInput()
+    })
+    function autoFocusInput() {
+        setTimeout(function () {
+            $("input[name='input-box']").focus()
+        }, 2000)
+    }
     // set auto focus to inputbox
-    setTimeout(function () {
-        $("input[name='input-box']").focus()
-    }, 1000)
+    autoFocusInput()
 
     /* on click possible action list item: scroll to initial possition 
     Note: this page applicable to page-8
