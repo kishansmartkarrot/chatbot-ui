@@ -27,25 +27,23 @@ $(document).ready(function () {
 
     //replace close icon on
     $('.js-close-button').mouseenter(function () {
-        $(this)
-            .find('img')
-            .attr('src', '../../assets/img/ionic-ios-close-black.svg')
+        $(this).find('img').attr('src', 'assets/img/ionic-ios-close-black.svg')
+
+        // .attr('src', '../../assets/img/ionic-ios-close-black.svg')
     })
 
     $('.js-close-button').mouseleave(function () {
-        $(this).find('img').attr('src', '../../assets/img/ionic-ios-close.svg')
+        $(this).find('img').attr('src', 'assets/img/ionic-ios-close.svg')
     })
 
     // Replace mic icon on hover effect
     $('.mic-icon').mouseenter(function () {
         $(this)
             .find('img')
-            .attr('src', '../../assets/img/microphone-alt-solid-black.svg')
+            .attr('src', 'assets/img/microphone-alt-solid-black.svg')
     })
 
     $('.mic-icon').mouseleave(function () {
-        $(this)
-            .find('img')
-            .attr('src', '../../assets/img/microphone-alt-solid.svg')
+        $(this).find('img').attr('src', 'assets/img/microphone-alt-solid.svg')
     })
 })
