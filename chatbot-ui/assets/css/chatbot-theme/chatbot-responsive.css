@@ -1,0 +1,21 @@
+@media (max-width: 767.98px) {
+  .take-a-look-btn {
+    margin-bottom: 1rem; }
+  #input-box {
+    padding-right: 52px; }
+  .info-card .icon .line-1 {
+    left: 14px !important; }
+  .info-card .icon .line-2 {
+    left: 15px !important; }
+  .risk-summary-card-row .col-md-4 {
+    margin-bottom: 1rem; }
+    .risk-summary-card-row .col-md-4:last-child {
+      margin-bottom: 0; }
+  .risk-summary-row .col-sm-12 {
+    margin-bottom: 1rem; }
+    .risk-summary-row .col-sm-12:last-child {
+      margin-bottom: 0; }
+  .action-requested-chat-card {
+    width: 100%; }
+  .action-requested-petal {
+    width: 100% !important; } }
