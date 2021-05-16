@@ -3,6 +3,95 @@
  * Chatbot Theme - v1.0.0
  =========================================================
  */
+.navbar {
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.bg-light {
+  background-color: #fff !important; }
+
+.container-fluid {
+  padding-right: var(--bs-gutter-x, 8.75rem);
+  padding-left: var(--bs-gutter-x, 8.75rem); }
+
+.height-big {
+  height: 600px; }
+
+.copy-right {
+  background-color: #F6F6FD;
+  width: 100%;
+  padding: 28px 0;
+  position: absolute;
+  bottom: 0; }
+  .copy-right a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #2D2E31;
+    opacity: 0.7; }
+  .copy-right .mail {
+    color: #6746EE;
+    font-weight: 600; }
+
+.banner-img-section {
+  top: -333px;
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  right: 11px; }
+
+.circle-1 {
+  position: absolute;
+  top: 166px;
+  right: 423px; }
+
+.circle-2 {
+  position: absolute;
+  bottom: -158px;
+  right: -100px;
+  z-index: 1; }
+
+.screen-1 {
+  width: auto;
+  position: absolute;
+  top: 158px;
+  height: 465px;
+  right: 225px;
+  z-index: 1; }
+
+.screen-2 {
+  width: auto;
+  height: 500px;
+  position: absolute;
+  top: 175px;
+  right: -40px;
+  z-index: 11; }
+
+.hero-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  margin-top: 85px; }
+
+.hero-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  margin-right: 11rem;
+  line-height: 45px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 14px; }
+
+.hero-desc {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #2D2E31;
+  opacity: 0.6;
+  line-height: 28px;
+  font-weight: 400;
+  margin-bottom: 30px; }
+
 .heading-light {
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
@@ -851,6 +940,8 @@ a {
   margin-bottom: 65vh; }
 
 @media (max-width: 767.98px) {
+  .hero-heading {
+    margin-right: 0; }
   .take-a-look-btn {
     margin-bottom: 1rem; }
   #input-box {
@@ -872,9 +963,6 @@ a {
   .action-requested-petal {
     width: 100% !important; } }
 
-.btn-lg {
-  height: 56px; }
-
 .btn:active {
   box-shadow: none; }
   .btn:active:focus {
@@ -894,6 +982,17 @@ a {
   .btn-primary:hover {
     background-color: #4520aa; }
 
+.btn-dark {
+  border: 0;
+  box-shadow: 5px 10px 16px #2d2e312e;
+  border-radius: 10px;
+  background-color: #2D2E31;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600; }
+  .btn-dark:hover {
+    background-color: #000; }
+
 .btn-outline-primary {
   border-color: #6746EE;
   color: #6746EE;
@@ -907,6 +1006,13 @@ a {
     color: #4520aa;
     border-color: #4520aa;
     box-shadow: 5px 10px 16px #4520AA34; }
+
+.btn-lg {
+  height: 56px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: .5rem 2.5rem; }
 
 .possible-actions-btn {
   position: relative;

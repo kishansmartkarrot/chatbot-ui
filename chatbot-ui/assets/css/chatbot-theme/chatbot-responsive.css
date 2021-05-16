@@ -1,4 +1,6 @@
 @media (max-width: 767.98px) {
+  .hero-heading {
+    margin-right: 0; }
   .take-a-look-btn {
     margin-bottom: 1rem; }
   #input-box {

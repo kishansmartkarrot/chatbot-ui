@@ -6,6 +6,11 @@
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
 
+  // hero section
+  .hero-heading{
+    margin-right: 0;
+  }
+
   //Button & Input
   .take-a-look-btn {
     margin-bottom: 1rem;
