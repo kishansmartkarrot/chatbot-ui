@@ -1,0 +1,90 @@
+.login-bg {
+  .login-bg-dark {
+    position: absolute;
+    top: -190px;
+    left: 0;
+
+  }
+
+  .login-bg-light {
+    position: absolute;
+    top: -170px;
+    left: 0;
+  }
+}
+
+.login-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 42px;
+}
+
+.mt-270-exact {
+  margin-top: 270px;
+}
+
+.get-demo-link {
+  margin-top: 77px;
+}
+
+.get-demo-link-less {
+  margin-top: 17px;
+}
+
+
+// -------- Login Entrance page ---------- //
+
+
+.login-entrance-bg {
+  .login-entrance-bg-dark {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .login-entrance-bg-light {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  .login-entrance-img {
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+
+  .login-btn-div {
+    button {
+      width: 134px;
+    }
+  }
+}
+
+.mt-466 {
+  margin-top: 376px
+}
+
+.tiny {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: $dark;
+  opacity: 0.9;
+  font-weight: 200;
+  margin-bottom: 36px;
+  margin-top: 5px
+}
+
+.text-login-entrance {
+  font-size: 20px;
+  color: $dark;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+
+  b {
+    font-weight: 600;
+  }
+}

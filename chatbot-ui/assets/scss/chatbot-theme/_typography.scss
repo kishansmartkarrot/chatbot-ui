@@ -8,24 +8,45 @@
   letter-spacing: 1px;
   margin-bottom: 16px;
   margin-top: 85px;
+
+  // X-Small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    margin-top: 45px;
+
+  }
 }
-.hero-heading{
+
+.hero-heading {
   font-family: 'Open Sans', sans-serif;
   font-size: 36px;
-  margin-right: 11rem;
   line-height: 45px;
   font-weight: 600;
   margin-top: 16px;
   margin-bottom: 14px;
+
 }
-.hero-desc{
+
+.hero-desc-landing {
   font-family: 'Open Sans', sans-serif;
   font-size: 20px;
   color: $dark;
   opacity: 0.6;
-  line-height:28px;
   font-weight: 400;
+  line-height: 28px;
+  text-align: left;
   margin-bottom: 30px;
+}
+
+.hero-desc {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #454545;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  width: 200px;
 }
 
 // heading & titles
@@ -128,4 +149,8 @@
   &:hover {
     text-decoration: underline;
   }
+}
+
+.font-weight-300 {
+  font-weight: 300;
 }

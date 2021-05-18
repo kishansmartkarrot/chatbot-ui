@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+  <!-- Goofle FOnts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- animate css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Chatbot Theme -->
+  <link rel="stylesheet" href="assets/css/chatbot-theme.css">
+  <title>Onboarding Slider</title>
+</head>
+
+<body>
+  <div class="container">
+    <img class="chat-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" src="assets/img/chat-icon.png" alt="">
+
+
+  </div>
+
+  <div class="offcanvas offcanvas-end show shadow-lg" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-bs-keyboard="false">
+
+    <!-- start header -->
+    <div class="offcanvas-header">
+      <div class="slider-bg">
+        <img class="slider-bg-dark" src="assets/img/others/slider-bg-dark.svg" alt="">
+        <img class="slider-bg-light" src="assets/img/others/slider-bg-light.svg" alt="">
+      </div>
+
+      <div class="slider-bg-for-4th-slide hide">
+        <img class="slider-4-bg-dark" src="assets/img/others/slider-4-img-dark.svg" alt="">
+        <img class="slider-4-bg-light" src="assets/img/others/slider-4-img-light.svg" alt="">
+        <h2 class="hero-title">Great… You all set! Sit back and experience how Xia helps make customer success a reality.</h2>
+        <img class="slider-4-bg-img" src="assets/img/others/slider-4-img.svg" alt="">
+        <div class="text-center thanks-btn-div">
+          <a href="page-2.html">
+            <button type="button" class="btn btn-lg btn-primary mr-8">Got it</button>
+          </a>
+        </div>
+      </div>
+
+      <a data-bs-dismiss="offcanvas">
+        <div class="close-icon">
+          <img class="arrow-right" src="assets/img/arrow-right.svg" alt="">
+        </div>
+      </a>
+    </div>
+    <!-- end header -->
+
+    <!-- Strat Slick slider -->
+    <div class="your-class">
+
+      <!-- Slide 1 -->
+      <div>
+        <!-- start slider content -->
+        <div class="slider-content">
+          <div class="slider-head-content">
+            <div>
+              <img class="person" src="assets/img/others/person-2x.png" alt="">
+            </div>
+            <div>
+              <h2 class="hero-desc">Hello Jonathan!</h2>
+            </div>
+            <div>
+              <img src="assets/img/others/slide-1-img.svg" alt="">
+            </div>
+          </div>
+          <h2 class="slide-text-normal">Xia ensures you never miss what’s most important for you from a Customer Success perspective.</h2>
+          <hr class="line-white">
+          <h2 class="slide-text-bold">What’s most important for you to track?</h2>
+          <div class="text-right">
+            <div class="btn-group checkbox-group mt-5" role="group" aria-label="Basic checkbox toggle button group">
+              <input checked type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck1">Account at risk</label>
+              <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck2">Account doing well</label>
+            </div>
+            <div class="btn-group checkbox-group mt-16" role="group" aria-label="Basic checkbox toggle button group">
+              <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck3">Renewals</label>
+
+              <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck4">Escalation</label>
+
+              <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck5">Other (Define)</label>
+            </div>
+          </div>
+        </div>
+        <!-- End slider content -->
+      </div>
+
+      <!-- Slide 2 -->
+      <div>
+        <!-- start slider content -->
+        <div class="slider-content">
+          <div class="slider-head-content">
+            <div>
+              <img class="person" src="assets/img/others/person-2x.png" alt="">
+            </div>
+            <div>
+              <h2 class="hero-desc">Also...</h2>
+            </div>
+            <div>
+              <img src="assets/img/others/slide-2-img.svg" alt="">
+            </div>
+          </div>
+          <h2 class="slide-text-normal">Xia fits in seamlessly to make sure you are updated as often as you need to be updated.</h2>
+          <hr class="line-white">
+          <h2 class="slide-text-bold">How often would you like to be informed?</h2>
+          <div class="text-right">
+            <div class="btn-group checkbox-group mt-5" role="group" aria-label="Basic checkbox toggle button group">
+              <input type="checkbox" class="btn-check" id="btncheck11" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck11">As and when there is a problem</label>
+              <input checked type="checkbox" class="btn-check" id="btncheck21" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck21">Once a day</label>
+            </div>
+            <div class="btn-group checkbox-group mt-16" role="group" aria-label="Basic checkbox toggle button group">
+              <input type="checkbox" class="btn-check" id="btncheck31" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck31">Every alternate day</label>
+
+              <input type="checkbox" class="btn-check" id="btncheck41" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck41">Once a week</label>
+
+              <input type="checkbox" class="btn-check" id="btncheck51" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck51">Other (Define)</label>
+            </div>
+          </div>
+        </div>
+        <!-- End slider content -->
+      </div>
+
+      <!-- Slide 3 -->
+      <div>
+        <!-- start slider content -->
+        <div class="slider-content">
+          <div class="slider-head-content">
+            <div>
+              <img class="person" src="assets/img/others/person-2x.png" alt="">
+            </div>
+            <div>
+              <h2 class="hero-desc">And finally...</h2>
+            </div>
+            <div>
+              <img src="assets/img/others/slide-3-img.svg" alt="">
+            </div>
+          </div>
+          <h2 class="slide-text-normal">Xia ensures that you have everything to keep your key stakeholders updated.</h2>
+          <hr class="line-white">
+          <h2 class="slide-text-bold">Who are your most important stakeholders?</h2>
+          <div class="text-right">
+            <div class="btn-group checkbox-group mt-5" role="group" aria-label="Basic checkbox toggle button group">
+
+              <input checked type="checkbox" class="btn-check" id="btncheck111" autocomplete="off">
+              <label class="btn btn-outline-primary ml-0" for="btncheck111">CS Leader</label>
+
+              <input type="checkbox" class="btn-check" id="btncheck211" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck211">Management Team</label>
+
+              <input type="checkbox" class="btn-check" id="btncheck311" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck311"> Project Manager</label>
+
+
+            </div>
+            <div class="btn-group checkbox-group mt-16" role="group" aria-label="Basic checkbox toggle button group">
+
+
+              <input checked type="checkbox" class="btn-check" id="btncheck411" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck411">Customer Champion</label>
+
+              <input type="checkbox" class="btn-check" id="btncheck511" autocomplete="off">
+              <label class="btn btn-outline-primary" for="btncheck511">Other (Define)</label>
+            </div>
+          </div>
+        </div>
+        <!-- End slider content -->
+      </div>
+
+      <!-- Slide 4 -->
+      <div>
+        <!-- start slider content -->
+        <div class="slider-content">
+          <div>&nbsp;</div>
+        </div>
+        <!-- End slider content -->
+      </div>
+
+    </div>
+    <!-- End Slick slider -->
+
+    <!-- start body -->
+    <div class="offcanvas-body bg-primary mb-0">
+      <div class="other-input-div">
+        <input type="text" class="form-control" id="otherInputBox" placeholder="Type out other reason here...">
+      </div>
+    </div>
+    <!-- end body -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/slider.js"></script>
+
+</body>
+
+</html>

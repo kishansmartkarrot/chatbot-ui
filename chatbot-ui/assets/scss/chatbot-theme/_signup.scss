@@ -1,0 +1,70 @@
+.signup-bg-light {
+  position: absolute;
+  left: 0;
+  top: -185px;
+
+  @media (max-width: 767.98px) {
+    width: 100%;
+  }
+}
+
+.signup-bg-dark {
+  position: absolute;
+  left: 0;
+  top: -200px;
+
+  @media (max-width: 767.98px) {
+    width: 100%;
+  }
+}
+
+.signup-chatbot {
+  position: absolute;
+  left: 175px;
+  top: 65px;
+  z-index: 11;
+
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) {
+    left: 22%;
+  }
+}
+
+.signup-chatbot-bg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100px;
+  z-index: 1;
+}
+
+.transparent-icon-bg {
+  background-color: transparent !important;
+  background: transparent !important;
+  border: 1px solid #ddddddb0 !important;
+
+  &:first-child {
+    opacity: 1;
+  }
+}
+
+.mt-270 {
+  margin-top: 415px;
+
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) {
+    margin-top: 270px;
+  }
+}
+
+.mt-250 {
+  margin-top: 250px;
+}
+
+.ml-8 {
+  margin-left: 8px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
