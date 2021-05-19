@@ -6,6 +6,11 @@
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
 
+  // hero section
+  .hero-heading {
+    margin-right: 0;
+  }
+
   //Button & Input
   .take-a-look-btn {
     margin-bottom: 1rem;
@@ -41,20 +46,24 @@
       }
     }
   }
-	.risk-summary-row{
-		.col-sm-12{
-			margin-bottom: 1rem;
-			&:last-child {
+
+  .risk-summary-row {
+    .col-sm-12 {
+      margin-bottom: 1rem;
+
+      &:last-child {
         margin-bottom: 0;
       }
-		}
-	}
-	.action-requested-chat-card{
-		width: 100%;
-	}
-	.action-requested-petal{
-		width: 100%!important;
-	}
+    }
+  }
+
+  .action-requested-chat-card {
+    width: 100%;
+  }
+
+  .action-requested-petal {
+    width: 100% !important;
+  }
 }
 
 // Medium devices (tablets, less than 992px)
@@ -74,3 +83,12 @@
 
 // XX-Large devices (larger desktops)
 // No media query since the xxl breakpoint has no upper bound on its width
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 992px) {
+  .hero-section {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

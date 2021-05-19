@@ -22,9 +22,65 @@
 </head>
 
 <body>
-  <div class="container">
-    <img class="chat-icon" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample" src="assets/img/chat-icon.png" alt="">
+  <!-- Start Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/img/logo.svg" alt="">
+      </a>
+      <a href="signup.html" role="button">
+        <button class="btn btn-lg btn-dark d-block d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+          Get a Demo
+        </button>
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <!-- Empty Nav -->
+        </ul>
+        <form class="d-flex">
+          <a href="signup.html" role="button">
+            <button class="btn btn-lg btn-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">Get a Demo</button>
+          </a>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+
+  <!-- Start Hero Section -->
+  <div class="container-fluid hero-section">
+    <div class="row banner-row d-flex justify-content-center align-items-center">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-7  col-xl-8 col-xxl-8   position-relative order-md-1 order-lg-2 text-right">
+        <img class="img-fluid banner-img" src="assets/img/banner-2.png" alt="">
+      </div>
+      <div class="col-xs-12  col-sm-12 col-md-12 col-lg-5 col-xl-4 col-xxl-4  order-md-2 order-lg-1">
+        <h2 class="hero-title">Customer Success Simplified</h2>
+        <h2 class="hero-heading">Helping you stay in the know... always!</h2>
+        <h2 class="hero-desc-landing">Xia, yourvirtual assistance ensure you never miss what's most important for you from a Customer Success perspective.</h2>
+        <a href="login-entrance.html" role="button">
+          <button class="btn btn-lg btn-primary" type="submit">Get Started</button>
+        </a>
+      </div>
+    </div>
   </div>
+  <!-- End Hero Section -->
+
+  <!-- Start Copyright -->
+  <div class="copy-right">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-sm-12">
+          <a href="#">Copyright ©2021 by SmartKarrot Inc.</a>
+        </div>
+        <div class="col-md-4 col-sm-12"></div>
+        <div class="col-md-4 col-sm-12 text-right">
+          <a class="mail" href="mailto:info@smartcarrot.com">info@smartcarrot.com</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Copyright -->
+
 
   <div class="offcanvas offcanvas-end show shadow-lg" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel" data-bs-keyboard="false">
     <!-- start background  -->

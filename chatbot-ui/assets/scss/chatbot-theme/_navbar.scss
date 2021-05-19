@@ -1,0 +1,11 @@
+@import "../chatbot-theme/variables";
+
+.navbar {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  z-index: 11;
+}
+
+.bg-light {
+  background-color: $white !important;
+}

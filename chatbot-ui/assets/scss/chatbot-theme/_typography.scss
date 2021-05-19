@@ -1,5 +1,59 @@
 @import "../chatbot-theme/variables";
 
+// landing page
+.hero-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  margin-top: 85px;
+
+  // X-Small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    margin-top: 45px;
+
+  }
+}
+
+.hero-heading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 36px;
+  line-height: 45px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 14px;
+
+}
+
+.hero-desc-landing {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: $dark;
+  opacity: 0.6;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.hero-desc {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  color: #454545;
+  line-height: 28px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-bottom: 0;
+  width: 200px;
+
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) {
+    width: auto;
+
+  }
+}
 
 // heading & titles
 .heading-light {
@@ -101,4 +155,8 @@
   &:hover {
     text-decoration: underline;
   }
+}
+
+.font-weight-300 {
+  font-weight: 300;
 }

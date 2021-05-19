@@ -1,8 +1,5 @@
 @import "../chatbot-theme/variables";
 
-.btn-lg {
-  height: 56px;
-}
 
 .btn {
   &:active {
@@ -32,6 +29,20 @@
   }
 }
 
+.btn-dark {
+  border: 0;
+  box-shadow: 5px 10px 16px #2d2e312e;
+  border-radius: 10px;
+  background-color: $dark;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $black;
+  }
+}
+
 .btn-outline-primary {
   border-color: $primary;
   color: $primary;
@@ -48,6 +59,15 @@
     box-shadow: 5px 10px 16px #4520AA34;
   }
 }
+
+.btn-lg {
+  height: 56px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1rem;
+  border-radius: 10px;
+  padding: .5rem 2.5rem;
+}
+
 
 .possible-actions-btn {
   position: relative;

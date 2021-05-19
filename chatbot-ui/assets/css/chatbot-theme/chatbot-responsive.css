@@ -1,4 +1,6 @@
 @media (max-width: 767.98px) {
+  .hero-heading {
+    margin-right: 0; }
   .take-a-look-btn {
     margin-bottom: 1rem; }
   #input-box {
@@ -19,3 +21,9 @@
     width: 100%; }
   .action-requested-petal {
     width: 100% !important; } }
+
+@media (min-width: 992px) {
+  .hero-section {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); } }

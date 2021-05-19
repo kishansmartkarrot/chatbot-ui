@@ -1,0 +1,59 @@
+// ----- Landing Page default styles ----- //
+.container-fluid {
+  padding-right: var(--bs-gutter-x, 8.75rem);
+  padding-left: var(--bs-gutter-x, 8.75rem);
+
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) {
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+  }
+
+}
+
+// copyright
+.copy-right {
+  background-color: #F6F6FD;
+  width: 100%;
+  padding: 28px 0;
+  position: fixed;
+  bottom: 0;
+
+  @media (max-width: 575.98px) {
+    position: unset;
+    margin-top: 50px;
+  }
+
+  a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: $dark;
+    opacity: 0.7;
+  }
+
+  .mail {
+    color: #6746EE;
+    font-weight: 600;
+  }
+
+  @media (max-width: 767.98px) {
+    .col-sm-12 {
+      text-align: center !important;
+    }
+  }
+}
+
+// banner
+.banner-img {
+  margin-top: 90px;
+  margin-right: -70px;
+
+  // X-Small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    margin-right: unset;
+  }
+}
+
+.banner-row {
+  margin-top: -90px;
+}
