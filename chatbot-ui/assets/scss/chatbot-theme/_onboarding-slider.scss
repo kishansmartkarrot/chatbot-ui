@@ -7,12 +7,22 @@
     position: absolute;
     top: 120px;
     left: 0;
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      top: 95px;
+    }
   }
 
   .slider-bg-light {
     position: absolute;
     top: 95px;
     left: 0px;
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      top: 75px;
+    }
   }
 }
 
@@ -21,12 +31,22 @@
     position: absolute;
     top: 0px;
     left: 0px;
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      width: 102%;
+    }
   }
 
   .slider-4-bg-light {
     position: absolute;
     top: 80px;
     left: 0px;
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      width: 100%;
+    }
   }
 }
 
@@ -42,6 +62,18 @@
     top: -7px;
     z-index: 111;
     line-height: 24px;
+    text-transform: unset;
+
+    b {
+      color: #fab363;
+      font-weight: 600;
+    }
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      width: 325px;
+      top: 50px;
+    }
   }
 
   .slider-4-bg-img {
@@ -49,6 +81,11 @@
     left: 50%;
     transform: translateX(-50%);
     top: 225px;
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      width: 200px;
+    }
   }
 }
 
@@ -60,6 +97,11 @@
   hr {
     border-top: 1px solid $white;
     margin: 23px 0 30px 0;
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      margin: 10px 0 15px 0;
+    }
   }
 
   .slider-head-content {
@@ -69,6 +111,19 @@
     align-items: center;
     margin-bottom: 62px;
     margin-top: 85px;
+
+
+    div {
+      &:last-child {
+        img {
+
+          // Small devices (landscape phones, less than 768px)
+          @media (max-width: 767.98px) {
+            width: 100px;
+          }
+        }
+      }
+    }
   }
 
   .slide-text-normal {
@@ -97,12 +152,26 @@
 }
 
 .checkbox-group {
+
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) {
+    margin-top: 10px !important;
+  }
+
   .btn {
     height: 46px;
     line-height: 2.3;
     padding-left: 16px;
     padding-right: 16px;
     font-size: 14px !important;
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      font-size: 12px !important;
+      line-height: 2.6;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
   }
 
   label {
@@ -111,6 +180,11 @@
     border-color: $white;
     color: $white;
     font-weight: 200;
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      margin-left: 8px !important;
+    }
 
     &:hover {
       background-color: #F4A045 !important;
@@ -151,6 +225,7 @@
       background-color: #F4A045;
       font-weight: 600 !important;
       border-color: #FFF;
+      border: 2px solid $white;
     }
   }
 
@@ -228,6 +303,12 @@
 }
 
 .slick-dots {
+  li.slick-active-button {
+    &::before {
+      opacity: 1;
+    }
+  }
+
   li {
     margin: 0;
 
@@ -248,7 +329,7 @@
         color: #000;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
-        border-radius: 10px;
+        border-radius: 25%;
       }
     }
   }
@@ -275,6 +356,11 @@
   border-top-left-radius: 0 !important;
   border-bottom-left-radius: 0 !important;
   background-color: #f9fafb29;
+
+  &:hover {
+    background-color: $white;
+    color: $primary !important;
+  }
 }
 
 // .slick-disabled {
@@ -305,6 +391,11 @@
     &:focus {
       background-color: #7c60ef;
     }
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      width: 230px;
+    }
   }
 }
 
@@ -315,7 +406,11 @@
 
 .circle-icon {
   position: absolute;
-  width: 10px;
+  width: 12px;
   left: 22px;
   top: 22px;
+}
+
+.thanks-btn-div {
+  z-index: 111111;
 }

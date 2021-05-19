@@ -55,6 +55,11 @@
   transform: translateX(-50%);
   top: 700px;
 
+  // X-Small devices (portrait phones, less than 576px)
+  @media (max-width: 575.98px) {
+    top: 520px;
+  }
+
   button {
     width: 204px;
   }

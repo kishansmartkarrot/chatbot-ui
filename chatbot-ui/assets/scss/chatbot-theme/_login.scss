@@ -4,12 +4,21 @@
     top: -190px;
     left: 0;
 
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      top: -230px;
+    }
   }
 
   .login-bg-light {
     position: absolute;
     top: -170px;
     left: 0;
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      top: -210px;
+    }
   }
 }
 
@@ -22,6 +31,11 @@
 
 .mt-270-exact {
   margin-top: 270px;
+
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) {
+    margin-top: 220px;
+  }
 }
 
 .get-demo-link {
@@ -41,12 +55,23 @@
     position: absolute;
     left: 0;
     top: 0;
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      height: 48%;
+    }
+
   }
 
   .login-entrance-bg-light {
     position: absolute;
     left: 0;
     top: 0;
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      height: 50%;
+    }
   }
 
   .login-entrance-img {
@@ -54,6 +79,11 @@
     left: 50%;
     transform: translateX(-50%);
     position: absolute;
+
+    // Small devices (landscape phones, less than 768px)
+    @media (max-width: 767.98px) {
+      width: 230px;
+    }
   }
 
   .login-btn-div {
@@ -64,7 +94,12 @@
 }
 
 .mt-466 {
-  margin-top: 376px
+  margin-top: 376px;
+
+  // Small devices (landscape phones, less than 768px)
+  @media (max-width: 767.98px) {
+    margin-top: 250px;
+  }
 }
 
 .tiny {

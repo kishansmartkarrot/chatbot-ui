@@ -37,6 +37,9 @@ $(document).ready(function () {
             if (nextSlide >= 1 && nextSlide < 3) {
                 $('.other-input-div').css('display', 'none')
                 $('.slick-prev-btn').css('display', 'block')
+                $('.slick-prev-btn').addClass(
+                    'slick-disabled slick-disabled-btn'
+                )
                 $('.slider-bg').css('display', 'block')
                 $('.offcanvas-body').addClass('bg-primary')
                 $('.slider-bg-for-4th-slide ').addClass('hide')
@@ -44,6 +47,11 @@ $(document).ready(function () {
                 $('.close-icon')
                     .find('img')
                     .attr('src', 'assets/img/arrow-right.svg')
+            }
+            if (nextSlide < 1) {
+                $('.slick-prev-btn').addClass(
+                    'slick-disabled slick-disabled-btn'
+                )
             }
             if (nextSlide == 2) {
                 $('.slick-next-btn-text').text('Done')
@@ -62,6 +70,7 @@ $(document).ready(function () {
             }
             if (nextSlide == 3) {
                 $('.slick-prev-btn').css('display', 'none')
+                $('.other-input-div').css('display', 'none')
                 $('.slick-next-btn').css('display', 'none')
                 $('.slider-bg').css('display', 'none')
                 $('.offcanvas-body').removeClass('bg-primary')
@@ -73,4 +82,8 @@ $(document).ready(function () {
             }
         }
     )
+})
+
+$(document).on('click', '.slick-disabled-btn', function () {
+    window.location.replace('page-2.html')
 })

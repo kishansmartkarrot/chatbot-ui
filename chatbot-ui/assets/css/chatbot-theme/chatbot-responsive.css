@@ -21,3 +21,9 @@
     width: 100%; }
   .action-requested-petal {
     width: 100% !important; } }
+
+@media (min-width: 992px) {
+  .hero-section {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%); } }
