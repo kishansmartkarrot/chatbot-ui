@@ -470,21 +470,27 @@
   position: absolute;
   left: 0;
   top: 80px; }
+  @media (max-width: 767.98px) {
+    .thanks-bg .thanks-bg-light {
+      width: 100%; } }
 
 .thanks-bg .thanks-bg-dark {
   position: absolute;
   left: 0;
   top: 0px; }
+  @media (max-width: 767.98px) {
+    .thanks-bg .thanks-bg-dark {
+      width: 100%; } }
 
 .thanks-img {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
   top: 170px; }
-  @media (max-width: 575.98px) {
+  @media (max-width: 767.98px) {
     .thanks-img {
-      top: 270px;
-      width: 300px; } }
+      top: 165px;
+      width: 250px; } }
 
 .thanks-text h2 {
   color: #fff;

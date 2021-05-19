@@ -15,7 +15,7 @@ $(document).ready(function () {
             }
         },
         prevArrow:
-            "<button class='btn btn-light btn-lg slick-prev-btn'>skip</button>",
+            "<button class='btn btn-light btn-lg slick-prev-btn slick-disabled-btn'>skip</button>",
         nextArrow:
             "<button class='btn  btn-light btn-lg slick-next-btn'><span class='slick-next-btn-text'>Next</span><span class='slick-right-icon'><img class='arrow-icon' src='assets/img/others/caret-right-solid.svg'/></span></button>"
     })
@@ -37,9 +37,7 @@ $(document).ready(function () {
             if (nextSlide >= 1 && nextSlide < 3) {
                 $('.other-input-div').css('display', 'none')
                 $('.slick-prev-btn').css('display', 'block')
-                $('.slick-prev-btn').addClass(
-                    'slick-disabled slick-disabled-btn'
-                )
+                $('.slick-prev-btn').addClass('slick-disabled')
                 $('.slider-bg').css('display', 'block')
                 $('.offcanvas-body').addClass('bg-primary')
                 $('.slider-bg-for-4th-slide ').addClass('hide')
@@ -60,6 +58,7 @@ $(document).ready(function () {
                     .attr('src', 'assets/img/others/check-circle-solid.svg')
                     .removeClass('arrow-icon')
                     .addClass('circle-icon')
+                $('.slick-prev-btn').css('display', 'none')
             } else {
                 $('.slick-next-btn-text').text('Next')
                 $('.slick-right-icon')
