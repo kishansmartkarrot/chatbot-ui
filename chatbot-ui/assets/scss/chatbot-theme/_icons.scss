@@ -7,7 +7,7 @@
   border: 1px solid #3b2ae069;
   opacity: 1;
   background-color: $white;
-  z-index: 1111111;
+  z-index: 1111111!important;
 
   &:hover {
     border: 1px solid $border;
