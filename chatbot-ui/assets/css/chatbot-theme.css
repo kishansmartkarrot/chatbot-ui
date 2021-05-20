@@ -1070,7 +1070,7 @@
     box-shadow: 0 .5rem 1rem #4520aa5c !important;
     opacity: 0.8; }
     .close-icon:hover .arrow-right {
-      opacity: 1; }
+      opacity: 0.8; }
   .close-icon img:first-child {
     position: absolute;
     left: 50%;
@@ -1078,7 +1078,7 @@
     transform: translate(-50%, -50%);
     width: 20px;
     height: 20px;
-    opacity: 0.5; }
+    opacity: 0.8; }
 
 .line {
   border: 1px solid #3B2AE0;
