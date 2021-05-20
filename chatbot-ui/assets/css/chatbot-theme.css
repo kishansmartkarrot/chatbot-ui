@@ -276,6 +276,9 @@
     color: #fff;
     line-height: 24px;
     opacity: 0.8; }
+    @media (max-width: 767.98px) {
+      .slider-content .slide-text-normal {
+        padding-top: 20px; } }
   .slider-content .slide-text-bold {
     font-size: 20px;
     font-family: 'Open Sans', sans-serif;
@@ -1120,6 +1123,9 @@
   left: 190px;
   position: absolute;
   z-index: 111; }
+  @media (max-width: 767.98px) {
+    .avatar-list {
+      left: 170px; } }
   .avatar-list li {
     padding-right: 9px;
     cursor: pointer;
