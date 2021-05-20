@@ -5,8 +5,8 @@
 
   // Small devices (landscape phones, less than 768px)
   @media (max-width: 767.98px) {
-    padding-right: var(--bs-gutter-x, .75rem);
-    padding-left: var(--bs-gutter-x, .75rem);
+    padding-right: var(--bs-gutter-x, 25px);
+    padding-left: var(--bs-gutter-x, 25px);
   }
 
 }
@@ -28,7 +28,13 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     color: $dark;
-    opacity: 0.7;
+    opacity: 1!important;
+  }
+  span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: $dark!important;
+    opacity: 0.7!important;
   }
 
   .mail {

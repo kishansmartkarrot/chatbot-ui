@@ -99,6 +99,45 @@
 }
 
 
+// 
+
+.input-box::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: $dark !important;
+  opacity: 0.7;
+  font-style: italic !important;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.input-box::-moz-placeholder {
+  /* Firefox 19+ */
+  color: $dark !important;
+  opacity: 0.7;
+  font-style: italic !important;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.input-box:-ms-input-placeholder {
+  /* IE 10+ */
+  color: $dark !important;
+  opacity: 0.7;
+  font-style: italic !important;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.input-box:-moz-placeholder {
+  /* Firefox 18- */
+  color: $dark !important;
+  opacity: 0.7;
+  font-style: italic !important;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+
 
 // 
 
@@ -141,7 +180,7 @@
 
 // Signup form 
 #signup-form {
-  margin: 24px 93px 0 93px;
+  margin: 54px 93px 0 93px;
 
   .input-group {
     margin-bottom: 1rem;
@@ -165,4 +204,7 @@
 
   }
 
+}
+.mb-1rem{
+  margin-bottom: 1rem;;
 }

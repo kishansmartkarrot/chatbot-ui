@@ -15,7 +15,7 @@ $(document).ready(function () {
             }
         },
         prevArrow:
-            "<button class='btn btn-light btn-lg slick-prev-btn slick-disabled-btn'>skip</button>",
+            "<button class='btn btn-light btn-lg slick-prev-btn slick-disabled-btn'>Skip</button>",
         nextArrow:
             "<button class='btn  btn-light btn-lg slick-next-btn'><span class='slick-next-btn-text'>Next</span><span class='slick-right-icon'><img class='arrow-icon' src='assets/img/others/caret-right-solid.svg'/></span></button>"
     })
